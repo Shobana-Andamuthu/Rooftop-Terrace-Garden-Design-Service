@@ -6304,5 +6304,426 @@ html[dir="rtl"] input[type="date"]::-webkit-calendar-picker-indicator {
   stroke: var(--warm-gold) !important;
 }
 
+/* ==========================================================================
+   LUXURY BOTANICAL PRELOADER (Ultra-Refined, Responsive & Animated)
+   ========================================================================== */
+body.tv-loading {
+  overflow: hidden !important;
+}
+
+.tv-preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-main);
+  background-image: 
+    radial-gradient(circle at 50% 40%, rgba(197, 161, 90, 0.08) 0%, transparent 60%),
+    radial-gradient(circle at 20% 80%, rgba(31, 77, 58, 0.06) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(47, 107, 79, 0.06) 0%, transparent 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), 
+              visibility 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform, visibility;
+}
+
+.tv-preloader.tv-preloader-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: scale(1.03);
+}
+
+/* Ambient Floating Glow Orbs */
+.tv-preloader-backdrop {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.tv-preloader-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(70px);
+  opacity: 0.5;
+  animation: tvOrbFloat 8s ease-in-out infinite alternate;
+}
+
+.tv-preloader-orb-1 {
+  width: 280px;
+  height: 280px;
+  background: radial-gradient(circle, rgba(197, 161, 90, 0.25) 0%, transparent 70%);
+  top: 20%;
+  left: 30%;
+  animation-delay: 0s;
+}
+
+.tv-preloader-orb-2 {
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, rgba(31, 77, 58, 0.22) 0%, transparent 70%);
+  bottom: 25%;
+  right: 28%;
+  animation-delay: -3s;
+}
+
+.tv-preloader-orb-3 {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(200, 120, 90, 0.15) 0%, transparent 70%);
+  top: 60%;
+  left: 20%;
+  animation-delay: -5s;
+}
+
+@keyframes tvOrbFloat {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(25px, -20px) scale(1.08); }
+  100% { transform: translate(-20px, 20px) scale(0.95); }
+}
+
+/* Preloader Central Card / Content */
+.tv-preloader-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 420px;
+  width: 100%;
+  padding: 2.2rem 2rem;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(197, 161, 90, 0.22);
+  border-radius: var(--radius-xl);
+  box-shadow: 
+    0 20px 50px rgba(31, 77, 58, 0.08),
+    0 0 0 1px rgba(255, 255, 255, 0.6) inset;
+  animation: tvCardPop 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes tvCardPop {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.96);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Botanical Emblem Container */
+.tv-preloader-emblem {
+  position: relative;
+  width: 105px;
+  height: 105px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Outer Spinning Ring */
+.tv-preloader-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px dashed rgba(197, 161, 90, 0.45);
+  border-top-color: var(--warm-gold);
+  border-right-color: var(--forest);
+  animation: tvSpin 6s linear infinite;
+}
+
+.tv-preloader-ring-pulse {
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  border: 1px solid rgba(197, 161, 90, 0.2);
+  box-shadow: 0 0 25px rgba(197, 161, 90, 0.2);
+  animation: tvPulseRing 2.4s ease-in-out infinite alternate;
+}
+
+@keyframes tvSpin {
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes tvPulseRing {
+  0% { transform: scale(0.95); opacity: 0.4; }
+  100% { transform: scale(1.08); opacity: 0.9; }
+}
+
+/* Icon / SVG Leaf Animation */
+.tv-preloader-icon-wrap {
+  position: relative;
+  width: 72px;
+  height: 72px;
+  background: radial-gradient(circle, var(--bg-surface) 60%, var(--light-sage) 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(31, 77, 58, 0.12);
+  border: 1px solid rgba(197, 161, 90, 0.3);
+}
+
+.tv-preloader-leaf-svg {
+  width: 44px;
+  height: 44px;
+  display: block;
+}
+
+.tv-path-stem {
+  stroke-dasharray: 40;
+  stroke-dashoffset: 40;
+  animation: tvDrawStem 1.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.tv-path-leaf-left {
+  transform-origin: 32px 38px;
+  animation: tvGrowLeafLeft 1.2s 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+.tv-path-leaf-right {
+  transform-origin: 32px 28px;
+  animation: tvGrowLeafRight 1.2s 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+.tv-path-bud {
+  transform-origin: 32px 12px;
+  animation: tvBudPulse 1.8s ease-in-out infinite alternate;
+}
+
+@keyframes tvDrawStem {
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes tvGrowLeafLeft {
+  0% { transform: scale(0) rotate(-20deg); opacity: 0; }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
+@keyframes tvGrowLeafRight {
+  0% { transform: scale(0) rotate(20deg); opacity: 0; }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
+@keyframes tvBudPulse {
+  0% { transform: scale(0.85); filter: drop-shadow(0 0 2px rgba(197, 161, 90, 0.4)); }
+  100% { transform: scale(1.2); filter: drop-shadow(0 0 8px rgba(197, 161, 90, 0.9)); }
+}
+
+/* Brand Title & Subtitle */
+.tv-preloader-brand {
+  margin-bottom: 1.4rem;
+}
+
+.tv-preloader-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.4rem, 4vw, 1.75rem);
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  margin: 0 0 0.35rem 0;
+  background: linear-gradient(135deg, var(--forest-dark) 0%, var(--warm-gold) 60%, var(--forest) 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: tvTextShimmer 3s ease-in-out infinite alternate;
+}
+
+@keyframes tvTextShimmer {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.tv-preloader-subtitle {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  display: block;
+}
+
+/* Progress Wrap */
+.tv-preloader-progress-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.tv-preloader-progress-bar {
+  width: 100%;
+  height: 6px;
+  background: rgba(31, 77, 58, 0.1);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  position: relative;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+.tv-preloader-progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--forest) 0%, var(--evergreen) 50%, var(--warm-gold) 100%);
+  border-radius: var(--radius-full);
+  box-shadow: 0 0 12px rgba(197, 161, 90, 0.6);
+  transition: width 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+}
+
+.tv-preloader-progress-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.45) 50%, transparent 100%);
+  animation: tvProgressShine 1.5s infinite;
+}
+
+@keyframes tvProgressShine {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.tv-preloader-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.78rem;
+  font-family: var(--font-sans);
+  color: var(--text-muted);
+}
+
+.tv-preloader-status {
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  transition: opacity 0.2s ease;
+}
+
+.tv-preloader-percent {
+  font-weight: 700;
+  color: var(--forest);
+  font-variant-numeric: tabular-nums;
+  min-width: 32px;
+  text-align: right;
+}
+
+/* Dark Mode Polish */
+[data-theme="dark"] .tv-preloader {
+  background-color: var(--bg-main);
+  background-image: 
+    radial-gradient(circle at 50% 40%, rgba(197, 161, 90, 0.12) 0%, transparent 60%),
+    radial-gradient(circle at 20% 80%, rgba(47, 107, 79, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(20, 55, 41, 0.25) 0%, transparent 50%);
+}
+
+[data-theme="dark"] .tv-preloader-content {
+  background: rgba(23, 40, 32, 0.65);
+  border-color: rgba(197, 161, 90, 0.28);
+  box-shadow: 
+    0 25px 60px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(255, 255, 255, 0.08) inset;
+}
+
+[data-theme="dark"] .tv-preloader-icon-wrap {
+  background: radial-gradient(circle, #1F3329 60%, #172820 100%);
+  border-color: rgba(197, 161, 90, 0.4);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .tv-preloader-title {
+  background: linear-gradient(135deg, #FFFFFF 0%, var(--gold-light) 50%, var(--warm-gold) 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+[data-theme="dark"] .tv-preloader-subtitle {
+  color: var(--text-muted);
+}
+
+[data-theme="dark"] .tv-preloader-progress-bar {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+[data-theme="dark"] .tv-preloader-percent {
+  color: var(--gold-light);
+}
+
+/* RTL Layout Support */
+[dir="rtl"] .tv-preloader-title {
+  letter-spacing: 0.1em;
+}
+
+[dir="rtl"] .tv-preloader-subtitle {
+  letter-spacing: 0.08em;
+}
+
+[dir="rtl"] .tv-preloader-percent {
+  text-align: left;
+}
+
+/* Mobile & Small Screen Optimizations */
+@media (max-width: 480px) {
+  .tv-preloader-content {
+    padding: 1.8rem 1.4rem;
+    border-radius: var(--radius-lg);
+  }
+  .tv-preloader-emblem {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 1.2rem;
+  }
+  .tv-preloader-icon-wrap {
+    width: 60px;
+    height: 60px;
+  }
+  .tv-preloader-leaf-svg {
+    width: 36px;
+    height: 36px;
+  }
+  .tv-preloader-title {
+    font-size: 1.35rem;
+    letter-spacing: 0.18em;
+  }
+  .tv-preloader-subtitle {
+    font-size: 0.72rem;
+  }
+  .tv-preloader-meta {
+    font-size: 0.74rem;
+  }
+}
+
+@media (max-width: 340px) {
+  .tv-preloader-content {
+    padding: 1.5rem 1.1rem;
+  }
+  .tv-preloader-title {
+    font-size: 1.2rem;
+    letter-spacing: 0.14em;
+  }
+  .tv-preloader-subtitle {
+    font-size: 0.68rem;
+  }
+}
+
+
 
 

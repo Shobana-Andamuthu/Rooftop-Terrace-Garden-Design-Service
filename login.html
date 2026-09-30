@@ -12,6 +12,58 @@
 </head>
 <body class="auth-body">
 
+  <!-- ==========================================================================
+       LUXURY BOTANICAL PRELOADER
+       ========================================================================== -->
+  <div class="tv-preloader" id="tvPreloader" role="status" aria-live="polite" aria-label="Loading TerraVerdé...">
+    <div class="tv-preloader-backdrop">
+      <div class="tv-preloader-orb tv-preloader-orb-1"></div>
+      <div class="tv-preloader-orb tv-preloader-orb-2"></div>
+      <div class="tv-preloader-orb tv-preloader-orb-3"></div>
+    </div>
+    
+    <div class="tv-preloader-content">
+      <div class="tv-preloader-emblem">
+        <div class="tv-preloader-ring"></div>
+        <div class="tv-preloader-ring-pulse"></div>
+        <div class="tv-preloader-icon-wrap">
+          <svg class="tv-preloader-leaf-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="tvLeafGrad9" x1="0%" y1="100%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#1F4D3A"/>
+                <stop offset="50%" stop-color="#2F6B4F"/>
+                <stop offset="100%" stop-color="#C5A15A"/>
+              </linearGradient>
+              <linearGradient id="tvGoldGrad9" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#DFC48A"/>
+                <stop offset="100%" stop-color="#C5A15A"/>
+              </linearGradient>
+            </defs>
+            <path class="tv-path-stem" d="M32 58 V22" stroke="url(#tvLeafGrad9)" stroke-width="3" stroke-linecap="round"/>
+            <path class="tv-path-leaf-left" d="M32 38 C22 38 16 30 16 20 C24 20 32 26 32 38 Z" fill="url(#tvLeafGrad9)" fill-opacity="0.25" stroke="url(#tvGoldGrad9)" stroke-width="2.2" stroke-linejoin="round"/>
+            <path class="tv-path-leaf-right" d="M32 28 C42 28 48 20 48 10 C40 10 32 16 32 28 Z" fill="url(#tvLeafGrad9)" fill-opacity="0.35" stroke="url(#tvGoldGrad9)" stroke-width="2.2" stroke-linejoin="round"/>
+            <circle class="tv-path-bud" cx="32" cy="12" r="3.5" fill="url(#tvGoldGrad9)"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="tv-preloader-brand">
+        <h2 class="tv-preloader-title">TERRAVERDÉ</h2>
+        <span class="tv-preloader-subtitle">Rooftop &amp; Terrace Architecture</span>
+      </div>
+
+      <div class="tv-preloader-progress-wrap">
+        <div class="tv-preloader-progress-bar">
+          <div class="tv-preloader-progress-fill" id="tvPreloaderFill"></div>
+        </div>
+        <div class="tv-preloader-meta">
+          <span class="tv-preloader-status" id="tvPreloaderStatus">Cultivating Sanctuary...</span>
+          <span class="tv-preloader-percent" id="tvPreloaderPercent">0%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="auth-split-wrapper">
     
     <!-- LEFT PANEL: High-end Visual & Branding Overlay -->

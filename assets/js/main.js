@@ -4,6 +4,83 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  // 0. Luxury Botanical Page Preloader
+  const initPagePreloader = () => {
+    const preloader = document.getElementById('tvPreloader');
+    if (!preloader) return;
+
+    document.body.classList.add('tv-loading');
+
+    const fillBar = document.getElementById('tvPreloaderFill');
+    const percentEl = document.getElementById('tvPreloaderPercent');
+    const statusEl = document.getElementById('tvPreloaderStatus');
+
+    const statusMessages = [
+      'Cultivating Sanctuary...',
+      'Arranging Botanical Layers...',
+      'Aligning Sunlight & Architecture...',
+      'Welcome to TerraVerdé'
+    ];
+
+    let currentProgress = 0;
+    let targetProgress = 85;
+    let isWindowLoaded = false;
+
+    const updateStatus = (pct) => {
+      if (!statusEl) return;
+      if (pct < 30) statusEl.textContent = statusMessages[0];
+      else if (pct < 65) statusEl.textContent = statusMessages[1];
+      else if (pct < 95) statusEl.textContent = statusMessages[2];
+      else statusEl.textContent = statusMessages[3];
+    };
+
+    const progressInterval = setInterval(() => {
+      if (currentProgress < targetProgress) {
+        currentProgress += Math.floor(Math.random() * 8) + 4;
+        if (currentProgress > targetProgress) currentProgress = targetProgress;
+        if (fillBar) fillBar.style.width = `${currentProgress}%`;
+        if (percentEl) percentEl.textContent = `${currentProgress}%`;
+        updateStatus(currentProgress);
+      }
+    }, 40);
+
+    const finishPreloader = () => {
+      if (isWindowLoaded) return;
+      isWindowLoaded = true;
+      targetProgress = 100;
+      clearInterval(progressInterval);
+
+      const finalInterval = setInterval(() => {
+        if (currentProgress < 100) {
+          currentProgress += 6;
+          if (currentProgress > 100) currentProgress = 100;
+          if (fillBar) fillBar.style.width = `${currentProgress}%`;
+          if (percentEl) percentEl.textContent = `${currentProgress}%`;
+          updateStatus(currentProgress);
+        } else {
+          clearInterval(finalInterval);
+          setTimeout(() => {
+            preloader.classList.add('tv-preloader-hidden');
+            document.body.classList.remove('tv-loading');
+            setTimeout(() => {
+              preloader.style.display = 'none';
+            }, 700);
+          }, 250);
+        }
+      }, 15);
+    };
+
+    if (document.readyState === 'complete') {
+      finishPreloader();
+    } else {
+      window.addEventListener('load', finishPreloader);
+      // Failsafe timeout
+      setTimeout(finishPreloader, 1800);
+    }
+  };
+
+  initPagePreloader();
+
   // 1. Theme Management (Light / Dark)
   const themeToggleBtns = document.querySelectorAll('.theme-toggle-btn');
   const htmlElement = document.documentElement;
