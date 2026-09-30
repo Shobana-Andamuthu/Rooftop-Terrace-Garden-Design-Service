@@ -3577,11 +3577,12 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--bg-surface-alt);
 }
 
-/* 3-Column Plant Cards Grid */
+/* /* 3-Column Plant Cards Grid */
 .plant-species-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  align-items: stretch;
 }
 
 .plant-species-card {
@@ -3592,6 +3593,7 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: var(--shadow-sm);
   display: flex;
   flex-direction: column;
+  height: 100%;
   transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
 }
 
@@ -3606,6 +3608,7 @@ h1, h2, h3, h4, h5, h6 {
   aspect-ratio: 16 / 11;
   overflow: hidden;
   background: var(--forest-dark);
+  flex-shrink: 0;
 }
 
 .plant-species-media img {
@@ -3667,7 +3670,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .plant-species-body {
-  padding: 1.75rem;
+  padding: 1.75rem 1.6rem 1.6rem;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -3679,24 +3682,34 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.85rem;
   color: var(--terracotta);
   font-weight: 600;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.35rem;
+  min-height: 1.35rem;
+  display: flex;
+  align-items: flex-end;
 }
 
 .plant-common-name {
-  font-size: 1.28rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: var(--text-main);
   margin-bottom: 0.65rem;
   line-height: 1.3;
+  min-height: 3.25rem;
+  display: flex;
+  align-items: flex-start;
 }
 
-/* Reserved 3-line description height for absolute visual symmetry */
+/* Reserved description height with line clamping for 100% mathematical symmetry */
 .plant-desc-fixed {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   color: var(--text-muted);
   line-height: 1.55;
-  min-height: 4.4rem;
-  margin-bottom: 1.35rem;
+  min-height: 4.8rem;
+  margin-bottom: 1.25rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 /* Badges Grid (Light, Water, Care) */
@@ -3704,21 +3717,26 @@ h1, h2, h3, h4, h5, h6 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0.5rem;
-  margin-bottom: 1.5rem;
+  margin-top: auto;
+  margin-bottom: 1.25rem;
   padding: 0.75rem 0;
   border-top: 1px solid var(--border-subtle);
   border-bottom: 1px solid var(--border-subtle);
+  align-items: stretch;
 }
 
 .plant-metric-box {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
   background: var(--bg-surface-alt);
-  padding: 0.55rem 0.35rem;
+  padding: 0.5rem 0.3rem;
   border-radius: var(--radius-sm);
   border: 1px solid var(--border-subtle);
+  min-height: 74px;
+  height: 100%;
 }
 
 .plant-metric-icon {
@@ -3732,6 +3750,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--terracotta);
   margin-bottom: 0.25rem;
   transition: all var(--transition-fast);
+  flex-shrink: 0;
 }
 
 .plant-metric-icon svg {
@@ -3750,7 +3769,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .plant-metric-title {
-  font-size: 0.65rem;
+  font-size: 0.64rem;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--text-muted);
@@ -3759,10 +3778,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .plant-metric-value {
-  font-size: 0.75rem;
+  font-size: 0.74rem;
   font-weight: 700;
   color: var(--forest);
   line-height: 1.2;
+  min-height: 1.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 [data-theme="dark"] .plant-metric-value {
@@ -3773,7 +3797,8 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: auto;
+  margin-top: 0;
+  width: 100%;
 }
 
 .plant-inquire-btn {
@@ -3784,13 +3809,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   color: var(--forest);
   background: var(--bg-surface-alt);
-  padding: 0.55rem 1.15rem;
+  padding: 0.6rem 1.15rem;
   border-radius: var(--radius-full);
   border: 1px solid var(--border-subtle);
   transition: all var(--transition-fast);
   cursor: pointer;
   width: 100%;
   justify-content: center;
+  min-height: 42px;
 }
 
 [data-theme="dark"] .plant-inquire-btn {

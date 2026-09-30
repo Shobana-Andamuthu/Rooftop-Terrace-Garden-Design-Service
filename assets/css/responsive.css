@@ -433,6 +433,35 @@ html, body {
     height: 180px !important;
   }
 
+  .plant-species-body {
+    padding: 1.35rem 1.15rem 1.25rem !important;
+  }
+
+  .plant-botanical-name {
+    min-height: auto !important;
+  }
+
+  .plant-common-name {
+    font-size: 1.18rem !important;
+    min-height: auto !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .plant-desc-fixed {
+    min-height: auto !important;
+    margin-bottom: 1.15rem !important;
+  }
+
+  .plant-metric-box {
+    min-height: 70px !important;
+    padding: 0.45rem 0.25rem !important;
+  }
+
+  .plant-metric-value {
+    font-size: 0.72rem !important;
+    min-height: 1.6rem !important;
+  }
+
   .contact-info-card {
     padding: 1.35rem 1.15rem !important;
   }
@@ -933,6 +962,22 @@ html, body {
   .mobile-drawer-footer .rtl-toggle-btn svg {
     width: 17px !important;
     height: 17px !important;
+  }
+
+  .plant-badges-row {
+    gap: 0.35rem !important;
+  }
+
+  .plant-metric-box {
+    padding: 0.4rem 0.15rem !important;
+  }
+
+  .plant-metric-title {
+    font-size: 0.6rem !important;
+  }
+
+  .plant-metric-value {
+    font-size: 0.68rem !important;
   }
 }
 
