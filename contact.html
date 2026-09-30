@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Book Free Site Visit — Rooftop Design Studio | TerraVerde</title>
+  <meta name="description"
+    content="Book a complimentary on-site structural and horticultural rooftop audit with TerraVerde's master landscape architects. Get direct studio contact details and consultation workflow.">
+
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <!-- Google Fonts Preconnect & Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+  <!-- ==========================================================================
+       SITE HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <nav class="navbar">
+
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-logo" id="brandLogo" aria-label="TerraVerdé Home">
+          <img src="assets/images/logo-transparent.png" alt="TerraVerdé - Rooftop &amp; Terrace"
+            class="brand-logo-img logo-light" width="165" height="48">
+          <img src="assets/images/logo-dark.png" alt="TerraVerdé - Rooftop &amp; Terrace"
+            class="brand-logo-img logo-dark" width="165" height="48">
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-desktop">
+          <li class="nav-item-dropdown">
+            <a href="index.html" class="nav-link dropdown-toggle-btn" id="homeDropdownBtn" aria-haspopup="true">
+              <span>Home</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <div class="dropdown-menu" aria-label="Home Submenu">
+              <a href="index.html" class="dropdown-item">Home 1 (Signature)</a>
+              <a href="home-2.html" class="dropdown-item">Home 2 (Editorial)</a>
+            </div>
+          </li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="projects-gallery.html" class="nav-link">Projects Gallery</a></li>
+          <li><a href="plant-selection.html" class="nav-link">Plant Selection</a></li>
+          <li><a href="maintenance-plans.html" class="nav-link">Maintenance Plans</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+
+        <!-- Right Side Controls & CTA & Login -->
+        <div class="nav-controls">
+          <button type="button" class="control-btn theme-toggle-btn" aria-label="Toggle dark/light theme"
+            id="themeToggleBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          </button>
+
+          <button type="button" class="control-btn rtl-toggle-btn" aria-label="Toggle text direction" id="rtlToggleBtn">
+            RTL
+          </button>
+
+          <!-- Login Button in Navbar -->
+          <a href="login.html" class="btn-login" id="navLoginBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+            <span>Login</span>
+          </a>
+
+          <!-- Hamburger Button (Tablet & Mobile) -->
+          <button type="button" class="hamburger-btn" aria-label="Open mobile menu" id="hamburgerBtn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer Overlay -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay">
+    <div class="mobile-nav-drawer" id="mobileNavDrawer">
+
+      <div class="mobile-drawer-header">
+        <a href="index.html" class="brand-logo" aria-label="TerraVerdé Home">
+          <img src="assets/images/logo-transparent.png" alt="TerraVerdé - Rooftop &amp; Terrace"
+            class="brand-logo-img logo-light" width="145" height="42">
+          <img src="assets/images/logo-dark.png" alt="TerraVerdé - Rooftop &amp; Terrace"
+            class="brand-logo-img logo-dark" width="145" height="42">
+        </a>
+        <button type="button" class="btn-icon close-drawer-btn" aria-label="Close mobile menu" id="closeDrawerBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="mobile-nav-links">
+        <div class="mobile-dropdown-item">
+          <a href="#" class="mobile-nav-link mobile-dropdown-toggle">
+            <span>Home Variations</span>
+            <svg class="dropdown-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+          <div class="mobile-sub-menu">
+            <a href="index.html" class="mobile-sub-link">Home 1 (Signature)</a>
+            <a href="home-2.html" class="mobile-sub-link">Home 2 (Editorial)</a>
+          </div>
+        </div>
+        <a href="services.html" class="mobile-nav-link">Services</a>
+        <a href="projects-gallery.html" class="mobile-nav-link">Projects Gallery</a>
+        <a href="plant-selection.html" class="mobile-nav-link">Plant Selection</a>
+        <a href="maintenance-plans.html" class="mobile-nav-link">Maintenance Plans</a>
+        <a href="about.html" class="mobile-nav-link">About</a>
+        <a href="contact.html" class="mobile-nav-link active">Contact</a>
+      </nav>
+
+      <div class="mobile-drawer-footer">
+        <div class="mobile-controls-row">
+          <button type="button" class="btn btn-secondary btn-sm theme-toggle-btn" style="flex: 1;">Toggle Theme</button>
+          <button type="button" class="btn btn-secondary btn-sm rtl-toggle-btn" style="flex: 1;">RTL</button>
+        </div>
+        <a href="login.html" class="btn btn-secondary btn-sm mobile-login-btn" style="width: 100%;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+          <span>Client Portal Login</span>
+        </a>
+        <a href="contact.html" class="btn btn-primary" style="width: 100%;">Book a Free Site Visit</a>
+      </div>
+
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         SECTION 1: CONTACT HERO
+         ========================================================================== -->
+    <section class="contact-hero-section" id="contactHeroSection">
+      <div class="container">
+
+        <div class="maint-hero-header">
+          <span class="eyebrow">COMPLIMENTARY ROOFTOP AUDIT &bull; GLOBAL DESIGN STUDIOS</span>
+          <h1 class="maint-hero-title serif">Book Your Free Site Visit &amp; Structural Audit</h1>
+          <p class="maint-hero-lead">
+            Partner with award-winning landscape architects and certified structural engineers for a complimentary
+            on-site audit. We evaluate weight limits, micro-climates, and irrigation to deliver a bespoke 3D terrace
+            blueprint.
+          </p>
+        </div>
+
+        <div class="srv-hero-media-banner">
+          <img src="assets/images/contact/contact-hero.jpg"
+            alt="TerraVerde Landscape Studio Reception & Rooftop Consultations" loading="eager">
+          <div class="srv-hero-floating-badge">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--warm-gold)" stroke-width="2.2">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+              </path>
+            </svg>
+            <div>
+              <div style="font-weight: 700; font-size: 0.92rem; color: #FFFFFF;">Direct Concierge: +1 (800) 492-8377
+              </div>
+              <div style="font-size: 0.75rem; color: rgba(255,255,255,0.75);">Mon &ndash; Sat: 8:00 AM &ndash; 7:00 PM
+                EST &bull; 24-Hour Inquiry Response</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 2: CONTACT INFORMATION
+         ========================================================================== -->
+    <section class="gal-section" id="contactInfoSection">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="eyebrow">OUR DESIGN STUDIOS</span>
+          <h2 class="section-title serif">Get in Touch with Our Studios</h2>
+          <p class="section-subtitle">
+            Visit our architectural design ateliers or connect directly with our regional rooftop consultation teams.
+          </p>
+        </div>
+
+        <div class="contact-info-grid">
+
+          <!-- Studio Card 1: New York Flagship -->
+          <div class="contact-info-card">
+            <div class="contact-info-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg></div>
+            <h3 class="contact-info-title serif">New York Design Studio</h3>
+            <p class="contact-info-text">
+              450 Hudson Street, Suite 800<br>
+              Tribeca Design District<br>
+              New York, NY 10014
+            </p>
+            <div class="contact-info-details">
+              <div><strong>Phone:</strong> +1 (212) 555-8930</div>
+              <div><strong>Email:</strong> ny@terraverde-gardens.com</div>
+              <div><strong>Hours:</strong> Mon &ndash; Sat: 8:00 AM &ndash; 7:00 PM</div>
+            </div>
+            <a href="tel:+12125558930" class="contact-info-link">
+              <span>Call NY Studio &rarr;</span>
+            </a>
+          </div>
+
+          <!-- Studio Card 2: London Atelier -->
+          <div class="contact-info-card">
+            <div class="contact-info-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                <line x1="9" y1="22" x2="9" y2="22.01"></line>
+                <line x1="15" y1="22" x2="15" y2="22.01"></line>
+                <line x1="9" y1="6" x2="9" y2="6.01"></line>
+                <line x1="15" y1="6" x2="15" y2="6.01"></line>
+                <line x1="9" y1="10" x2="9" y2="10.01"></line>
+                <line x1="15" y1="10" x2="15" y2="10.01"></line>
+                <line x1="9" y1="14" x2="9" y2="14.01"></line>
+                <line x1="15" y1="14" x2="15" y2="14.01"></line>
+                <line x1="9" y1="18" x2="9" y2="18.01"></line>
+                <line x1="15" y1="18" x2="15" y2="18.01"></line>
+              </svg></div>
+            <h3 class="contact-info-title serif">London Atelier</h3>
+            <p class="contact-info-text">
+              28 Berkeley Square, Mayfair<br>
+              London W1J 6EN<br>
+              United Kingdom
+            </p>
+            <div class="contact-info-details">
+              <div><strong>Phone:</strong> +44 (20) 7946-0182</div>
+              <div><strong>Email:</strong> london@terraverde-gardens.com</div>
+              <div><strong>Hours:</strong> Mon &ndash; Sat: 8:00 AM &ndash; 7:00 PM</div>
+            </div>
+            <a href="tel:+442079460182" class="contact-info-link">
+              <span>Call London Atelier &rarr;</span>
+            </a>
+          </div>
+
+          <!-- Studio Card 3: Consultation Hours & Client Care -->
+          <div class="contact-info-card">
+            <div class="contact-info-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg></div>
+            <h3 class="contact-info-title serif">Consultation Hours</h3>
+            <p class="contact-info-text">
+              Our chartered architects conduct complimentary on-site rooftop feasibility audits 6 days a week across
+              metropolitan regions.
+            </p>
+            <div class="contact-info-details">
+              <div><strong>Mon &ndash; Fri:</strong> 8:00 AM &ndash; 7:00 PM EST</div>
+              <div><strong>Saturday:</strong> 9:00 AM &ndash; 5:00 PM EST</div>
+              <div><strong>Sunday:</strong> Private by Appointment</div>
+            </div>
+            <a href="#contactBookingSection" class="contact-info-link">
+              <span>Book Appointment &rarr;</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 2.5: INTERACTIVE ORIGINAL STUDIO LOCATION MAP (ZERO OVERLAP)
+         ========================================================================== -->
+    <section class="contact-map-section" id="contactMapSection">
+      <div class="container">
+
+        <div class="section-header" style="margin-bottom: 2.25rem;">
+          <span class="eyebrow">FLAGSHIP ATELIERS &amp; GLOBAL REACH</span>
+          <h2 class="section-title serif">Interactive Studio Locations &amp; On-Site Audit Coverage</h2>
+          <p class="section-subtitle">
+            Visit our architectural design ateliers in New York and London or request on-site feasibility audits across
+            metropolitan areas.
+          </p>
+        </div>
+
+        <div class="contact-map-layout">
+
+          <!-- Left Studio Details Panel -->
+          <div class="contact-map-panel">
+            <div>
+              <span class="eyebrow" style="margin-bottom: 0.5rem; display: inline-block;">STUDIO SELECTOR</span>
+              <h3 class="serif contact-map-heading">Explore Our Ateliers</h3>
+
+              <div class="contact-map-controls">
+                <button type="button" class="map-tab-btn active" id="btnMapNY" onclick="switchStudioMap('ny')">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg> <span>New York (Tribeca)</span>
+                </button>
+                <button type="button" class="map-tab-btn" id="btnMapLondon" onclick="switchStudioMap('london')">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                    <line x1="9" y1="22" x2="9" y2="22.01"></line>
+                    <line x1="15" y1="22" x2="15" y2="22.01"></line>
+                    <line x1="9" y1="6" x2="9" y2="6.01"></line>
+                    <line x1="15" y1="6" x2="15" y2="6.01"></line>
+                  </svg> <span>London (Mayfair)</span>
+                </button>
+              </div>
+
+              <div class="contact-map-info-box" id="mapInfoBox">
+                <h4 class="serif contact-map-studio-title" id="mapStudioTitle">New York Design Studio</h4>
+                <p id="mapStudioAddr"
+                  style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin: 0 0 0.85rem;">
+                  450 Hudson Street, Suite 800<br>
+                  Tribeca Design District, NY 10014<br>
+                  <strong>Direct Line:</strong> <a href="tel:+12125558930" class="contact-map-direct-link">+1 (212)
+                    555-8930</a><br>
+                  <strong>Hours:</strong> Mon &ndash; Sat: 8:00 AM &ndash; 7:00 PM
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <a href="https://maps.google.com/?q=450+Hudson+Street+New+York+NY+10014" target="_blank"
+                rel="noopener noreferrer" class="btn btn-primary" id="mapDirBtn"
+                style="width: 100%; justify-content: center;">
+                <span>Open in Google Maps &rarr;</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Clean Google Maps Iframe Frame -->
+          <div class="contact-map-wrapper">
+            <iframe id="googleMapIframe" class="contact-map-iframe"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.633519183921!2d-74.00940562346743!3d40.72608403675005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598c19985b9b%3A0x6a19fef2011b9195!2s450%20Hudson%20St%2C%20New%20York%2C%20NY%2010014!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              title="TerraVerdé Studio Location Google Map">
+            </iframe>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3: FREE SITE VISIT BOOKING FORM
+         ========================================================================== -->
+    <section class="gal-section" id="contactBookingSection" style="background: var(--bg-surface-alt);">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="eyebrow">NO COST &bull; NO OBLIGATION</span>
+          <h2 class="section-title serif">Schedule Your Free Site &amp; Structural Audit</h2>
+          <p class="section-subtitle">
+            Fill out the consultation request below. Our senior landscape architect will confirm your appointment within
+            24 hours.
+          </p>
+        </div>
+
+        <!-- High-Precision Responsive Form Card -->
+        <div class="contact-form-card">
+          <form id="freeSiteVisitForm"
+            onsubmit="event.preventDefault(); alert('Free Site Visit Request Confirmed! Our senior landscape architect will review your property specifications and call you within 24 hours.'); this.reset();">
+
+            <div class="contact-form-grid">
+
+              <!-- 1. Full Name -->
+              <div class="contact-form-group">
+                <label class="contact-label" for="clientName">Full Name *</label>
+                <input type="text" id="clientName" class="contact-input" placeholder="e.g. Eleanor Vance" required>
+              </div>
+
+              <!-- 2. Email Address -->
+              <div class="contact-form-group">
+                <label class="contact-label" for="clientEmail">Email Address *</label>
+                <input type="email" id="clientEmail" class="contact-input" placeholder="eleanor@example.com" required>
+              </div>
+
+              <!-- 3. Phone Number -->
+              <div class="contact-form-group">
+                <label class="contact-label" for="clientPhone">Phone Number *</label>
+                <input type="tel" id="clientPhone" class="contact-input" placeholder="+1 (555) 019-2834" required>
+              </div>
+
+              <!-- 4. Property Type -->
+              <div class="contact-form-group">
+                <label class="contact-label" for="propertyType">Property Type *</label>
+                <select id="propertyType" class="contact-select" required>
+                  <option value="" disabled selected>Select property type</option>
+                  <option value="penthouse">High-Rise Penthouse Rooftop</option>
+                  <option value="residential-terrace">Residential Apartment Terrace</option>
+                  <option value="balcony">Private Balcony</option>
+                  <option value="commercial">Commercial / Hospitality Terrace</option>
+                  <option value="brownstone">Brownstone Rooftop Deck</option>
+                </select>
+              </div>
+
+              <!-- 5. Rooftop/Terrace Size -->
+              <div class="contact-form-group">
+                <label class="contact-label" for="terraceSize">Approximate Size (Sq Ft) *</label>
+                <select id="terraceSize" class="contact-select" required>
+                  <option value="" disabled selected>Select approximate footprint</option>
+                  <option value="under-500">Under 500 sq ft (Compact Balcony / Terrace)</option>
+                  <option value="500-1500">500 &ndash; 1,500 sq ft (Medium Terrace)</option>
+                  <option value="1500-3000">1,500 &ndash; 3,000 sq ft (Spacious Penthouse)</option>
+                  <option value="3000-plus">Over 3,000 sq ft (Estate / Commercial)</option>
+                </select>
+              </div>
+
+              <!-- 6. Preferred Visit Date -->
+              <div class="contact-form-group">
+                <label class="contact-label" for="preferredDate">Preferred Visit Date *</label>
+                <input type="date" id="preferredDate" class="contact-input" required>
+              </div>
+
+              <!-- 7. Preferred Time -->
+              <div class="contact-form-group">
+                <label class="contact-label" for="preferredTime">Preferred Time Window *</label>
+                <select id="preferredTime" class="contact-select" required>
+                  <option value="" disabled selected>Select time window</option>
+                  <option value="morning">Morning (9:00 AM &ndash; 12:00 PM)</option>
+                  <option value="afternoon">Afternoon (12:00 PM &ndash; 4:00 PM)</option>
+                  <option value="evening">Late Afternoon / Sunset (4:00 PM &ndash; 7:00 PM)</option>
+                </select>
+              </div>
+
+              <!-- 8. Garden Requirements -->
+              <div class="contact-form-group">
+                <label class="contact-label" for="gardenRequirements">Primary Design Focus *</label>
+                <select id="gardenRequirements" class="contact-select" required>
+                  <option value="" disabled selected>Select primary requirement</option>
+                  <option value="complete-luxury">Complete Luxury Terrace Transformation</option>
+                  <option value="container-plants">Planter Curation &amp; Plant Selection</option>
+                  <option value="living-wall">Hydroponic Living Green Wall</option>
+                  <option value="irrigation-pergola">Smart Irrigation &amp; Bioclimatic Pergola</option>
+                  <option value="maintenance">Maintenance Plan Enrollment</option>
+                </select>
+              </div>
+
+              <!-- 9. Message / Project Notes -->
+              <div class="contact-form-group full-col">
+                <label class="contact-label" for="clientMessage">Project Notes &amp; Special Requirements</label>
+                <textarea id="clientMessage" class="contact-textarea"
+                  placeholder="Describe your terrace vision, elevator access, wind exposure, or specific aesthetic preferences..."></textarea>
+              </div>
+
+              <!-- 10. Submit Button -->
+              <div class="full-col" style="margin-top: 0.5rem;">
+                <button type="submit" class="btn btn-primary"
+                  style="width: 100%; justify-content: center; padding: 1.1rem 2rem; font-size: 1.05rem;">
+                  <span>Submit Free Site Visit Request &rarr;</span>
+                </button>
+                <p class="form-security-note">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                  <span>Your information is confidential. Zero spam guarantee &bull; 100% complimentary feasibility
+                    audit.</span>
+                </p>
+              </div>
+
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 4: WHAT HAPPENS AFTER YOU BOOK
+         ========================================================================== -->
+    <section class="gal-section" id="contactWorkflowSection">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="eyebrow">CLEAR &amp; TRANSPARENT JOURNEY</span>
+          <h2 class="section-title serif">What Happens After You Book</h2>
+          <p class="section-subtitle">
+            Our streamlined 4-step architectural onboarding ensures thorough engineering diligence and complete design
+            transparency.
+          </p>
+        </div>
+
+        <div class="contact-workflow-grid">
+
+          <!-- Step 1 -->
+          <div class="workflow-card">
+            <div class="workflow-step-num">1</div>
+            <h3 class="workflow-title serif">Submit Request</h3>
+            <p class="workflow-desc">
+              Submit your property details and preferred visit time online. Our system alerts our regional project
+              director immediately.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="workflow-card">
+            <div class="workflow-step-num">2</div>
+            <h3 class="workflow-title serif">We Contact You</h3>
+            <p class="workflow-desc">
+              Within 24 hours, our senior landscape architect calls to review building elevator clearances and confirm
+              on-site timing.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="workflow-card">
+            <div class="workflow-step-num">3</div>
+            <h3 class="workflow-title serif">On-Site Audit</h3>
+            <p class="workflow-desc">
+              We visit your terrace to measure square footage, analyze wind trajectories, inspect water connections, and
+              test load capacity.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="workflow-card">
+            <div class="workflow-step-num">4</div>
+            <h3 class="workflow-title serif">Garden Proposal</h3>
+            <p class="workflow-desc">
+              Receive a comprehensive 3D architectural render, botanical species list, solar irrigation diagram, and
+              fixed-cost quote.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 5: READY TO CREATE YOUR GARDEN CTA
+         ========================================================================== -->
+    <section class="gal-section" id="contactFinalCtaSection" style="background: var(--bg-surface-alt);">
+      <div class="container">
+
+        <div class="contact-final-banner">
+          <div>
+            <span class="eyebrow" style="background: rgba(255,255,255,0.15); color: var(--warm-gold);">ELEVATED
+              LUXURY</span>
+            <h2 class="serif"
+              style="color: #FFFFFF; font-size: clamp(2rem, 3.5vw, 2.75rem); margin: 0.6rem 0 1rem; line-height: 1.2;">
+              Ready to Transform Your Rooftop into a Masterpiece?
+            </h2>
+            <p style="color: rgba(255,255,255,0.85); font-size: 1rem; line-height: 1.65; margin: 0;">
+              Join over 350 satisfied homeowners who have elevated their urban lifestyle with TerraVerde's bespoke
+              botanical architecture.
+            </p>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 1rem; align-items: flex-start;">
+            <a href="#contactBookingSection" class="btn btn-accent" style="width: 100%; justify-content: center;">
+              <span>Book Your Free Site Visit Now &rarr;</span>
+            </a>
+            <a href="projects-gallery.html" class="btn btn-secondary"
+              style="width: 100%; justify-content: center; background: rgba(255,255,255,0.1); color: #FFFFFF; border-color: rgba(255,255,255,0.3);">
+              <span>Browse Completed Projects</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       SITE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer" id="siteFooter">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <!-- Column 1: Brand Info & Socials -->
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="TerraVerdé Home">
+            <img src="assets/images/logo-transparent.png" alt="TerraVerdé - Rooftop &amp; Terrace"
+              class="brand-logo-img logo-light" width="165" height="48">
+            <img src="assets/images/logo-dark.png" alt="TerraVerdé - Rooftop &amp; Terrace"
+              class="brand-logo-img logo-dark" width="165" height="48">
+          </a>
+          <p class="footer-desc">
+            Pioneering luxury rooftop architecture, sustainable botanical sanctuaries, and custom urban terraces
+            designed for elevated outdoor living.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="Pinterest">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M8 20l4-9-1.5-3.5 3 1.5 2 5-3 6"></path>
+              </svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation -->
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home 1 (Signature)</a></li>
+            <li><a href="home-2.html" class="footer-link">Home 2 (Editorial)</a></li>
+            <li><a href="services.html" class="footer-link">Services Overview</a></li>
+            <li><a href="projects-gallery.html" class="footer-link">Projects Gallery</a></li>
+            <li><a href="plant-selection.html" class="footer-link">Plant Selection</a></li>
+            <li><a href="maintenance-plans.html" class="footer-link">Maintenance Plans</a></li>
+            <li><a href="about.html" class="footer-link">About TerraVerdé</a></li>
+            <li><a href="contact.html" class="footer-link">Contact &amp; Site Visit</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Specialties -->
+        <div>
+          <h4 class="footer-heading">Specialties</h4>
+          <ul class="footer-links">
+            <li><a href="services.html" class="footer-link">Terrace Landscape Design</a></li>
+            <li><a href="services.html" class="footer-link">Rooftop Container Gardens</a></li>
+            <li><a href="services.html" class="footer-link">Vertical Green Walls</a></li>
+            <li><a href="services.html" class="footer-link">Smart Drip Irrigation</a></li>
+            <li><a href="maintenance-plans.html" class="footer-link">Seasonal Plant Care</a></li>
+            <li><a href="services.html" class="footer-link">Windbreak &amp; Pergolas</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact & Global Studios -->
+        <div class="footer-contact-col">
+          <h4 class="footer-heading">Contact &amp; Studios</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">
+              <span class="footer-contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg></span>
+              <div>
+                <strong>NY Studio:</strong> 450 Hudson St, Tribeca, NY 10014
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <span class="footer-contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                  <line x1="9" y1="22" x2="9" y2="22.01"></line>
+                  <line x1="15" y1="22" x2="15" y2="22.01"></line>
+                  <line x1="9" y1="6" x2="9" y2="6.01"></line>
+                  <line x1="15" y1="6" x2="15" y2="6.01"></line>
+                  <line x1="9" y1="10" x2="9" y2="10.01"></line>
+                  <line x1="15" y1="10" x2="15" y2="10.01"></line>
+                  <line x1="9" y1="14" x2="9" y2="14.01"></line>
+                  <line x1="15" y1="14" x2="15" y2="14.01"></line>
+                  <line x1="9" y1="18" x2="9" y2="18.01"></line>
+                  <line x1="15" y1="18" x2="15" y2="18.01"></line>
+                </svg></span>
+              <div>
+                <strong>London Atelier:</strong> 28 Berkeley Square, Mayfair, London W1J 6EN
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <span class="footer-contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg></span>
+              <div>
+                <strong>Direct Line:</strong> <a href="tel:+18004928377" class="footer-contact-link">+1 (800)
+                  492-8377</a>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <span class="footer-contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg></span>
+              <div>
+                <strong>Inquiries:</strong> <a href="mailto:concierge@terraverde-gardens.com"
+                  class="footer-contact-link">concierge@terraverde-gardens.com</a>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <span class="footer-contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg></span>
+              <div>
+                <strong>Hours:</strong> Mon &ndash; Sat: 8:00 AM &ndash; 7:00 PM
+              </div>
+            </div>
+          </div>
+          <div style="margin-top: 1.25rem;">
+            <a href="contact.html" class="btn btn-accent btn-sm" style="width: 100%; justify-content: center;">Book Free
+              Site Visit &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 TerraVerd&eacute; Rooftop &amp; Terrace Garden Design. All rights reserved.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="contact.html" class="footer-bottom-link">Site Consultation</a>
+          <span style="opacity: 0.3;">&bull;</span>
+          <a href="about.html" class="footer-bottom-link">Privacy Policy</a>
+          <span style="opacity: 0.3;">&bull;</span>
+          <a href="about.html" class="footer-bottom-link">Terms of Service</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       LOGIN MODAL
+       ========================================================================== -->
+  <div class="login-modal" id="loginModal">
+    <div class="login-modal-box">
+      <div class="login-modal-header">
+        <h3 class="serif">Client Portal Login</h3>
+        <button type="button" class="login-modal-close" id="loginModalClose"
+          aria-label="Close login modal">&times;</button>
+      </div>
+      <p class="login-modal-desc">
+        Access your real-time terrace irrigation telemetry, 3D architectural plans, and seasonal maintenance schedule.
+      </p>
+      <form class="login-modal-form" id="loginModalForm"
+        onsubmit="event.preventDefault(); alert('Authentication successful. Redirecting to client portal dashboard...'); document.getElementById('loginModal').classList.remove('active');">
+        <div class="form-group">
+          <label class="form-label" for="loginEmail">Email Address</label>
+          <input type="email" id="loginEmail" class="form-input" placeholder="name@example.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" class="form-input"
+            placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" required>
+        </div>
+        <div
+          style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; font-size: 0.85rem;">
+          <label style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer;">
+            <input type="checkbox"> Remember me
+          </label>
+          <a href="#forgot" style="color: var(--forest); font-weight: 600;">Forgot Password?</a>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Sign In to Client
+          Portal</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Floating Circular Glowing Back to Top Button -->
+  <button type="button" class="floating-back-to-top" id="backToTopBtn" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    function switchStudioMap(location) {
+      var iframe = document.getElementById('googleMapIframe');
+      var btnNY = document.getElementById('btnMapNY');
+      var btnLondon = document.getElementById('btnMapLondon');
+      var title = document.getElementById('mapStudioTitle');
+      var addr = document.getElementById('mapStudioAddr');
+      var dirBtn = document.getElementById('mapDirBtn');
+
+      if (!iframe || !btnNY || !btnLondon) return;
+
+      if (location === 'london') {
+        btnLondon.classList.add('active');
+        btnNY.classList.remove('active');
+        iframe.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.277717772714!2d-0.14921442337775536!3d51.50811801064848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d538965f97%3A0x8e87adbfb04d1685!2s28%20Berkeley%20Square%2C%20London%20W1J%206EN%2C%20UK!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus";
+        if (title) title.innerText = "London Atelier (Mayfair)";
+        if (addr) addr.innerHTML = "28 Berkeley Square, Mayfair<br>London W1J 6EN, United Kingdom<br><strong>Direct Line:</strong> <a href=\"tel:+442079460182\" class=\"contact-map-direct-link\">+44 (20) 7946-0182</a><br><strong>Hours:</strong> Mon &ndash; Sat: 8:00 AM &ndash; 7:00 PM GMT";
+        if (dirBtn) dirBtn.href = "https://maps.google.com/?q=28+Berkeley+Square+London+W1J+6EN";
+      } else {
+        btnNY.classList.add('active');
+        btnLondon.classList.remove('active');
+        iframe.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.633519183921!2d-74.00940562346743!3d40.72608403675005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598c19985b9b%3A0x6a19fef2011b9195!2s450%20Hudson%20St%2C%20New%20York%2C%20NY%2010014!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus";
+        if (title) title.innerText = "New York Design Studio";
+        if (addr) addr.innerHTML = "450 Hudson Street, Suite 800<br>Tribeca Design District, NY 10014<br><strong>Direct Line:</strong> <a href=\"tel:+12125558930\" class=\"contact-map-direct-link\">+1 (212) 555-8930</a><br><strong>Hours:</strong> Mon &ndash; Sat: 8:00 AM &ndash; 7:00 PM EST";
+        if (dirBtn) dirBtn.href = "https://maps.google.com/?q=450+Hudson+Street+New+York+NY+10014";
+      }
+    }
+  </script>
+</body>
+
+</html>

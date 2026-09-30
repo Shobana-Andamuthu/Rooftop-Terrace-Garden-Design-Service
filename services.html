@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services — Architectural Rooftop &amp; Terrace Garden Design | TerraVerde</title>
+  <meta name="description"
+    content="Explore TerraVerde's architectural rooftop design services: custom terrace planning, modular container gardening, hydroponic living green walls, and smart solar drip irrigation.">
+
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <!-- Google Fonts Preconnect & Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+  <!-- ==========================================================================
+       SITE HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <div class="navbar">
+
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-logo" id="brandLogo" aria-label="TerraVerdé Home">
+          <img src="assets/images/logo-transparent.png" alt="TerraVerdé - Rooftop &amp; Terrace"
+            class="brand-logo-img logo-light" width="165" height="48">
+          <img src="assets/images/logo-dark.png" alt="TerraVerdé - Rooftop &amp; Terrace"
+            class="brand-logo-img logo-dark" width="165" height="48">
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-desktop">
+          <li class="nav-item-dropdown">
+            <a href="index.html" class="nav-link dropdown-toggle-btn" id="homeDropdownBtn" aria-haspopup="true">
+              <span>Home</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <div class="dropdown-menu" aria-label="Home Submenu">
+              <a href="index.html" class="dropdown-item">Home 1 (Signature)</a>
+              <a href="home-2.html" class="dropdown-item">Home 2 (Editorial)</a>
+            </div>
+          </li>
+          <li><a href="services.html" class="nav-link active">Services</a></li>
+          <li><a href="projects-gallery.html" class="nav-link">Projects Gallery</a></li>
+          <li><a href="plant-selection.html" class="nav-link">Plant Selection</a></li>
+          <li><a href="maintenance-plans.html" class="nav-link">Maintenance Plans</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Right Side Controls & CTA & Login -->
+        <div class="nav-controls">
+          <button type="button" class="control-btn theme-toggle-btn" aria-label="Toggle dark/light theme"
+            id="themeToggleBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          </button>
+
+          <button type="button" class="control-btn rtl-toggle-btn" aria-label="Toggle text direction" id="rtlToggleBtn">
+            RTL
+          </button>
+
+          <!-- Login Button in Navbar -->
+          <a href="login.html" class="btn-login" id="navLoginBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+            <span>Login</span>
+          </a>
+
+          <!-- Hamburger Button (Tablet & Mobile) -->
+          <button type="button" class="hamburger-btn" aria-label="Open mobile menu" id="hamburgerBtn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer Overlay -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay">
+    <div class="mobile-nav-drawer" id="mobileNavDrawer">
+
+      <div class="mobile-drawer-header">
+        <a href="index.html" class="brand-logo" aria-label="TerraVerdé Home">
+          <img src="assets/images/logo-transparent.png" alt="TerraVerdé - Rooftop &amp; Terrace"
+            class="brand-logo-img logo-light" width="145" height="42">
+          <img src="assets/images/logo-dark.png" alt="TerraVerdé - Rooftop &amp; Terrace"
+            class="brand-logo-img logo-dark" width="145" height="42">
+        </a>
+        <button type="button" class="btn-icon close-drawer-btn" aria-label="Close mobile menu" id="closeDrawerBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="mobile-nav-links" aria-label="Mobile Navigation Menu">
+        <div>
+          <a href="#" class="mobile-nav-link mobile-dropdown-toggle">
+            <span>Home</span>
+            <svg class="dropdown-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+          <div class="mobile-sub-menu">
+            <a href="index.html" class="mobile-sub-link">Home 1 (Signature)</a>
+            <a href="home-2.html" class="mobile-sub-link">Home 2 (Editorial)</a>
+          </div>
+        </div>
+        <a href="services.html" class="mobile-nav-link active">Services</a>
+        <a href="projects-gallery.html" class="mobile-nav-link">Projects Gallery</a>
+        <a href="plant-selection.html" class="mobile-nav-link">Plant Selection</a>
+        <a href="maintenance-plans.html" class="mobile-nav-link">Maintenance Plans</a>
+        <a href="about.html" class="mobile-nav-link">About</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+      </nav>
+
+      <div class="mobile-drawer-footer">
+        <div class="mobile-controls-row">
+          <button type="button" class="btn btn-secondary btn-sm theme-toggle-btn" style="flex: 1;">Toggle Theme</button>
+          <button type="button" class="btn btn-secondary btn-sm rtl-toggle-btn" style="flex: 1;">RTL</button>
+        </div>
+        <a href="login.html" class="btn btn-secondary btn-sm mobile-login-btn" style="width: 100%;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+          <span>Client Portal Login</span>
+        </a>
+        <a href="contact.html" class="btn btn-primary" style="width: 100%;">Book a Free Site Visit</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MAIN CONTENT (EXACTLY 5 SECTIONS)
+       ========================================================================== -->
+  <main id="mainContent">
+
+    <!-- ==========================================================================
+         SECTION 1: SERVICES HERO
+         ========================================================================== -->
+    <section class="srv-hero-section" id="srvHeroSection">
+      <div class="container">
+
+        <div class="srv-hero-header">
+          <span class="eyebrow">ARCHITECTURAL HORTICULTURE &amp; ENGINEERING</span>
+          <h1 class="srv-hero-title serif">Comprehensive Rooftop &amp; Terrace Design Capabilities</h1>
+          <p class="srv-hero-lead">
+            We specialize exclusively in high-altitude outdoor architecture. From structural load calculations and
+            custom windbreaks to lightweight container curation and zero-runoff automated drip irrigation.
+          </p>
+
+          <!-- Quick Jump Navigation -->
+          <div class="srv-jump-nav">
+            <a href="#srvTerraceDesignSection" class="srv-jump-pill">
+              <span>01. Terrace Garden Design</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <a href="#srvContainerGardeningSection" class="srv-jump-pill">
+              <span>02. Container Gardening</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <a href="#srvVerticalWallSection" class="srv-jump-pill">
+              <span>03. Vertical Wall Gardens</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <a href="#srvIrrigationCtaSection" class="srv-jump-pill">
+              <span>04. Smart Irrigation Setup</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- High-Impact Panoramic Hero Media Banner -->
+        <div class="srv-hero-media-banner">
+          <img src="assets/images/services/services-hero.jpg" alt="Architectural rooftop terrace design studio concept"
+            loading="eager">
+          <div class="srv-hero-floating-badge">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 14 14"></polyline>
+            </svg>
+            <div>
+              <div style="font-weight: 700; font-size: 0.92rem; color: var(--warm-gold);">Certified Rooftop Landscape
+                Architecture</div>
+              <div style="font-size: 0.78rem; opacity: 0.85;">Compliant with all high-rise wind, weight, and drainage
+                building codes</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 2: TERRACE GARDEN DESIGN (Asymmetric 2-Column Split)
+         ========================================================================== -->
+    <section class="srv-section" id="srvTerraceDesignSection">
+      <div class="container">
+
+        <div class="srv-terrace-split">
+
+          <!-- Left Media Card -->
+          <div class="srv-terrace-media">
+            <img src="assets/images/services/services-terrace-design.jpg"
+              alt="Custom architectural terrace garden design" loading="lazy">
+            <span class="card-badge" style="position: absolute; top: 1.25rem; left: 1.25rem;">Bespoke Hardscaping</span>
+          </div>
+
+          <!-- Right Content & Benefits -->
+          <div>
+            <span class="eyebrow">CORE SERVICE 01</span>
+            <h2 class="section-title serif" style="margin: 0.4rem 0 1rem; text-align: left;">Architectural Terrace
+              Garden Design</h2>
+            <p style="font-size: 0.96rem; color: var(--text-muted); line-height: 1.65; margin-bottom: 1.5rem;">
+              We transform exposed rooftop surfaces into seamless outdoor living extensions. Every design integrates 3D
+              solar angle modeling, custom cantilevered shade pergolas, acoustic glass windbreaks, and slip-resistant
+              composite decking.
+            </p>
+
+            <!-- 4 Key Benefits -->
+            <div class="srv-benefit-chips">
+              <div class="srv-benefit-chip">
+                <h5 class="serif">Wind-Engineered Pergolas</h5>
+                <p>Calculated for gusts exceeding 120 km/h with hidden ground anchors.</p>
+              </div>
+              <div class="srv-benefit-chip">
+                <h5 class="serif">Sub-Deck Drainage Slopes</h5>
+                <p>Elevated pedestals allow rapid water transit to prevent ponding.</p>
+              </div>
+              <div class="srv-benefit-chip">
+                <h5 class="serif">Acoustic Glass Barriers</h5>
+                <p>Frameless tempered glass dampens urban street noise up to 35%.</p>
+              </div>
+              <div class="srv-benefit-chip">
+                <h5 class="serif">Integrated Lighting Channels</h5>
+                <p>Low-voltage waterproof LED channels in decking and planter bases.</p>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="contact.html" class="btn btn-primary">
+                <span>Consult on Terrace Design</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="projects-gallery.html" class="btn btn-secondary">View Terrace Portfolio</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3: CONTAINER GARDENING (Bento 3-Card Material Matrix)
+         ========================================================================== -->
+    <section class="srv-section" id="srvContainerGardeningSection">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="eyebrow">CORE SERVICE 02</span>
+          <h2 class="section-title serif">Artisanal Container Gardening &amp; Planter Curation</h2>
+          <p class="section-subtitle">
+            Rooftops require strictly controlled soil mass. We engineer lightweight, frost-proof vessels with internal
+            thermal liners that protect plant roots from extreme summer heat.
+          </p>
+        </div>
+
+        <div class="srv-container-bento">
+
+          <!-- Card 1: Fiber-Clay Minimalist -->
+          <div class="srv-container-card">
+            <div class="card-media" style="aspect-ratio: 16/10;">
+              <img src="assets/images/services/services-container-gardening.jpg"
+                alt="Artisanal container gardening on rooftop patio" loading="lazy">
+              <span class="card-badge">70% Weight Reduction</span>
+            </div>
+            <div class="srv-container-body">
+              <div>
+                <h3 class="serif" style="font-size: 1.25rem; color: var(--forest); margin-bottom: 0.5rem;">Fiber-Clay
+                  Modular Vessels</h3>
+                <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.55; margin-bottom: 1rem;">
+                  Formulated from natural clay reinforced with high-tensile fiberglass. UV-stabilized, non-brittle, and
+                  completely frost-resistant down to -25°C.
+                </p>
+                <ul
+                  style="list-style: none; padding: 0; margin: 0 0 1.25rem; font-size: 0.84rem; color: var(--text-main); display: flex; flex-direction: column; gap: 0.4rem;">
+                  <li>✓ Double-wall thermal root insulation</li>
+                  <li>✓ Integrated overflow reservoir plug</li>
+                  <li>✓ Matte architectural charcoal finish</li>
+                </ul>
+              </div>
+              <a href="contact.html" class="card-action-link">
+                <span>Select Planter Package</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: Weathering Corten Steel Troughs -->
+          <div class="srv-container-card">
+            <div class="card-media" style="aspect-ratio: 16/10;">
+              <img src="assets/images/services/services-container-corten.jpg" alt="Corten Steel Weathered Planters"
+                loading="lazy">
+              <span class="card-badge">Lifetime Patina</span>
+            </div>
+            <div class="srv-container-body">
+              <div>
+                <h3 class="serif" style="font-size: 1.25rem; color: var(--forest); margin-bottom: 0.5rem;">Corten Steel
+                  Perimeter Troughs</h3>
+                <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.55; margin-bottom: 1rem;">
+                  Industrial weathering steel creates a self-healing golden-amber oxide barrier that shields high-rise
+                  roof parapets and provides dense green screening.
+                </p>
+                <ul
+                  style="list-style: none; padding: 0; margin: 0 0 1.25rem; font-size: 0.84rem; color: var(--text-main); display: flex; flex-direction: column; gap: 0.4rem;">
+                  <li>✓ Custom corner dimensions &amp; heights</li>
+                  <li>✓ Polyurethane thermal foam backing</li>
+                  <li>✓ Built-in hidden castor wheel options</li>
+                </ul>
+              </div>
+              <a href="contact.html" class="card-action-link">
+                <span>Request Custom Sizing</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3: Mediterranean Terracotta -->
+          <div class="srv-container-card">
+            <div class="card-media" style="aspect-ratio: 16/10;">
+              <img src="assets/images/services/services-container-terracotta.jpg"
+                alt="Handcrafted Tuscan Terracotta Pots" loading="lazy">
+              <span class="card-badge">Porous Breathability</span>
+            </div>
+            <div class="srv-container-body">
+              <div>
+                <h3 class="serif" style="font-size: 1.25rem; color: var(--forest); margin-bottom: 0.5rem;">Hand-Thrown
+                  Tuscan Terracotta</h3>
+                <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.55; margin-bottom: 1rem;">
+                  Authentic natural clay amphorae offering natural evaporative cooling for mature olive trees, fragrant
+                  lavender bushes, and the culinary herbs.
+                </p>
+                <ul
+                  style="list-style: none; padding: 0; margin: 0 0 1.25rem; font-size: 0.84rem; color: var(--text-main); display: flex; flex-direction: column; gap: 0.4rem;">
+                  <li>✓ Exceptional soil oxygenation</li>
+                  <li>✓ Heavy base resists wind tip-over</li>
+                  <li>✓ Organic aged Mediterranean patina</li>
+                </ul>
+              </div>
+              <a href="contact.html" class="card-action-link">
+                <span>View Specimen Sizes</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 4: VERTICAL WALL GARDENS (Bio-Engineering Split Showcase)
+         ========================================================================== -->
+    <section class="srv-section" id="srvVerticalWallSection">
+      <div class="container">
+
+        <div class="srv-vert-split">
+
+          <!-- Left Technical Breakdown -->
+          <div>
+            <span class="eyebrow">CORE SERVICE 03</span>
+            <h2 class="section-title serif" style="margin: 0.4rem 0 1rem; text-align: left;">Engineered Hydroponic
+              Living Walls</h2>
+            <p style="font-size: 0.96rem; color: var(--text-muted); line-height: 1.65;">
+              Maximizing lush botanical density in compact urban footprints. Our vertical garden installations feature
+              modular felt-pocket cassettes, automated nutrient fertigation, and recirculating zero-waste drainage.
+            </p>
+
+            <!-- 4 Environmental Metrics -->
+            <div class="srv-vert-metrics-grid">
+              <div class="srv-vert-metric-box">
+                <div class="num serif">-4.5°C</div>
+                <div class="label">Rooftop Ambient Cooling</div>
+              </div>
+              <div class="srv-vert-metric-box">
+                <div class="num serif">35 dB</div>
+                <div class="label">Urban Sound Dampening</div>
+              </div>
+              <div class="srv-vert-metric-box">
+                <div class="num serif">98%</div>
+                <div class="label">Automated Water Recycling</div>
+              </div>
+              <div class="srv-vert-metric-box">
+                <div class="num serif">30+</div>
+                <div class="label">Living Plant Varieties / m²</div>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="contact.html" class="btn btn-primary">
+                <span>Commission a Living Wall</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="plant-selection.html" class="btn btn-secondary">Explore Vertical Plant Guide</a>
+            </div>
+          </div>
+
+          <!-- Right Living Wall Media -->
+          <div class="srv-terrace-media" style="aspect-ratio: 4/5;">
+            <img src="assets/images/services/services-vertical-wall.jpg"
+              alt="Lush vertical living wall garden on rooftop terrace" loading="lazy">
+            <div class="srv-hero-floating-badge" style="bottom: 1.25rem; left: 1.25rem; right: 1.25rem;">
+              <div>
+                <div style="font-weight: 700; font-size: 0.88rem; color: var(--warm-gold);">Automated Hydroponic Mesh
+                </div>
+                <div style="font-size: 0.76rem; opacity: 0.85;">Includes remote telemetry monitoring and bi-monthly
+                  plant health tuning</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 5: IRRIGATION SYSTEM SETUP + INTEGRATED FINAL CTA
+         ========================================================================== -->
+    <section class="srv-section" id="srvIrrigationCtaSection" style="border-bottom: none;">
+      <div class="container">
+
+        <div class="srv-irrig-cta-grid">
+
+          <!-- Left Hydronic Irrigation Engineering Showcase -->
+          <div>
+            <span class="eyebrow">CORE SERVICE 04</span>
+            <h2 class="section-title serif" style="margin: 0.4rem 0 1rem; text-align: left;">Smart Solar Micro-Drip
+              &amp; Weather Irrigation</h2>
+            <p style="font-size: 0.96rem; color: var(--text-muted); line-height: 1.65; margin-bottom: 1.5rem;">
+              Elevated high-rise terraces face severe evaporation and wind desiccation. Our autonomous solar irrigation
+              arrays deliver precise milliliter hydration directly to root zones without unsightly exterior cables.
+            </p>
+
+            <div class="srv-irrig-media-box" style="margin-bottom: 1.75rem;">
+              <img src="assets/images/services/services-irrigation-setup.jpg"
+                alt="Smart micro-drip irrigation system on rooftop planters" loading="lazy">
+              <span class="card-badge" style="position: absolute; top: 1rem; left: 1rem;">Zero-Grid Solar Tech</span>
+            </div>
+
+            <div class="srv-benefit-chips" style="margin: 0;">
+              <div class="srv-benefit-chip">
+                <h5 class="serif">Pressure-Compensated </h5>
+                <p>Equal water delivery regardless of elevation variations.</p>
+              </div>
+              <div class="srv-benefit-chip">
+                <h5 class="serif">Rain &amp; Wind Sensor Telemetry</h5>
+                <p>Auto-pauses watering during storms to eliminate runoff.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Integrated Final Booking Consultation CTA Card -->
+          <div class="srv-final-cta-card">
+            <span class="eyebrow">COMPLIMENTARY SITE AUDIT</span>
+            <h3 class="serif">Ready to Elevate Your Rooftop Sanctuary?</h3>
+            <p>
+              Schedule a comprehensive on-site architectural evaluation. Our licensed landscape engineering team audits
+              weight limits, analyzes wind paths, and prepares your custom 3D botanical master plan.
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: 0.85rem; margin-bottom: 2rem;">
+              <div style="display: flex; align-items: center; gap: 0.65rem; font-size: 0.88rem;">
+                <div
+                  style="width: 20px; height: 20px; border-radius: 50%; background: var(--warm-gold); color: #14281F; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.75rem;">
+                  ✓</div>
+                <span>Licensed Structural Load Certification</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 0.65rem; font-size: 0.88rem;">
+                <div
+                  style="width: 20px; height: 20px; border-radius: 50%; background: var(--warm-gold); color: #14281F; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.75rem;">
+                  ✓</div>
+                <span>Photorealistic 3D Visual Rendering</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 0.65rem; font-size: 0.88rem;">
+                <div
+                  style="width: 20px; height: 20px; border-radius: 50%; background: var(--warm-gold); color: #14281F; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.75rem;">
+                  ✓</div>
+                <span>Detailed Material &amp; Flora Schedule</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 0.65rem; font-size: 0.88rem;">
+                <div
+                  style="width: 20px; height: 20px; border-radius: 50%; background: var(--warm-gold); color: #14281F; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.75rem;">
+                  ✓</div>
+                <span>Zero Obligation Consultation Guarantee</span>
+              </div>
+            </div>
+
+            <a href="contact.html" class="btn btn-accent" style="width: 100%; justify-content: center;"
+              id="srvBookAuditBtn">
+              <span>Book Free On-Site Evaluation</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       SITE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer" id="siteFooter">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <!-- Column 1: Brand Info & Socials -->
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="TerraVerdé Home">
+            <img src="assets/images/logo-transparent.png" alt="TerraVerdé - Rooftop &amp; Terrace"
+              class="brand-logo-img logo-light" width="165" height="48">
+            <img src="assets/images/logo-dark.png" alt="TerraVerdé - Rooftop &amp; Terrace"
+              class="brand-logo-img logo-dark" width="165" height="48">
+          </a>
+          <p class="footer-desc">
+            Pioneering luxury rooftop architecture, sustainable botanical sanctuaries, and custom urban terraces
+            designed for elevated outdoor living.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="Pinterest">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M8 20l4-9-1.5-3.5 3 1.5 2 5-3 6"></path>
+              </svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation -->
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home 1 (Signature)</a></li>
+            <li><a href="home-2.html" class="footer-link">Home 2 (Editorial)</a></li>
+            <li><a href="services.html" class="footer-link">Services Overview</a></li>
+            <li><a href="projects-gallery.html" class="footer-link">Projects Gallery</a></li>
+            <li><a href="plant-selection.html" class="footer-link">Plant Selection</a></li>
+            <li><a href="maintenance-plans.html" class="footer-link">Maintenance Plans</a></li>
+            <li><a href="about.html" class="footer-link">About TerraVerdé</a></li>
+            <li><a href="contact.html" class="footer-link">Contact &amp; Site Visit</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Specialties -->
+        <div>
+          <h4 class="footer-heading">Specialties</h4>
+          <ul class="footer-links">
+            <li><a href="services.html" class="footer-link">Terrace Landscape Design</a></li>
+            <li><a href="services.html" class="footer-link">Rooftop Container Gardens</a></li>
+            <li><a href="services.html" class="footer-link">Vertical Green Walls</a></li>
+            <li><a href="services.html" class="footer-link">Smart Drip Irrigation</a></li>
+            <li><a href="maintenance-plans.html" class="footer-link">Seasonal Plant Care</a></li>
+            <li><a href="services.html" class="footer-link">Windbreak &amp; Pergolas</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact & Global Studios -->
+        <div class="footer-contact-col">
+          <h4 class="footer-heading">Contact &amp; Studios</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">
+              <span class="footer-contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg></span>
+              <div>
+                <strong>NY Studio:</strong> 450 Hudson St, Tribeca, NY 10014
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <span class="footer-contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                  <line x1="9" y1="22" x2="9" y2="22.01"></line>
+                  <line x1="15" y1="22" x2="15" y2="22.01"></line>
+                  <line x1="9" y1="6" x2="9" y2="6.01"></line>
+                  <line x1="15" y1="6" x2="15" y2="6.01"></line>
+                  <line x1="9" y1="10" x2="9" y2="10.01"></line>
+                  <line x1="15" y1="10" x2="15" y2="10.01"></line>
+                  <line x1="9" y1="14" x2="9" y2="14.01"></line>
+                  <line x1="15" y1="14" x2="15" y2="14.01"></line>
+                  <line x1="9" y1="18" x2="9" y2="18.01"></line>
+                  <line x1="15" y1="18" x2="15" y2="18.01"></line>
+                </svg></span>
+              <div>
+                <strong>London Atelier:</strong> 28 Berkeley Square, Mayfair, London W1J 6EN
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <span class="footer-contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg></span>
+              <div>
+                <strong>Direct Line:</strong> <a href="tel:+18004928377" class="footer-contact-link">+1 (800)
+                  492-8377</a>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <span class="footer-contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg></span>
+              <div>
+                <strong>Inquiries:</strong> <a href="mailto:concierge@terraverde-gardens.com"
+                  class="footer-contact-link">concierge@terraverde-gardens.com</a>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <span class="footer-contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg></span>
+              <div>
+                <strong>Hours:</strong> Mon &ndash; Sat: 8:00 AM &ndash; 7:00 PM EST
+              </div>
+            </div>
+          </div>
+          <div style="margin-top: 1.25rem;">
+            <a href="contact.html" class="btn btn-accent btn-sm" style="width: 100%; justify-content: center;">Book Free
+              Site Visit &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 TerraVerd&eacute; Rooftop &amp; Terrace Garden Design. All rights reserved.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="contact.html" class="footer-bottom-link">Site Consultation</a>
+          <span style="opacity: 0.3;">&bull;</span>
+          <a href="about.html" class="footer-bottom-link">Privacy Policy</a>
+          <span style="opacity: 0.3;">&bull;</span>
+          <a href="about.html" class="footer-bottom-link">Terms of Service</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       LOGIN MODAL
+       ========================================================================== -->
+  <div class="login-modal" id="loginModal">
+    <div class="login-modal-box">
+      <div class="login-modal-header">
+        <h3 class="serif">Client Portal Login</h3>
+        <button type="button" class="login-modal-close" id="loginModalClose" aria-label="Close login modal">✕</button>
+      </div>
+      <p class="login-modal-desc">
+        Access your real-time terrace irrigation telemetry, 3D architectural plans, and seasonal maintenance schedule.
+      </p>
+      <form class="login-modal-form" id="loginModalForm"
+        onsubmit="event.preventDefault(); alert('Authentication successful. Redirecting to client portal dashboard...'); document.getElementById('loginModal').classList.remove('active');">
+        <div class="form-group">
+          <label class="form-label" for="loginEmail">Email Address</label>
+          <input type="email" id="loginEmail" class="form-input" placeholder="name@example.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" class="form-input" placeholder="••••••••" required>
+        </div>
+        <div
+          style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem; font-size: 0.85rem;">
+          <label style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer;">
+            <input type="checkbox"> Remember me
+          </label>
+          <a href="#forgot" style="color: var(--forest); font-weight: 600;">Forgot Password?</a>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Sign In to Client
+          Portal</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Floating Circular Glowing Back to Top Button -->
+  <button type="button" class="floating-back-to-top" id="backToTopBtn" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

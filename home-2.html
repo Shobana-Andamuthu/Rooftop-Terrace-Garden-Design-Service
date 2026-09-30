@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>TerraVerde | Editorial Rooftop Architecture &amp; Garden Design</title>
+  <meta name="description" content="Explore bespoke rooftop architectural sanctuaries, custom terrace landscaping collections, living green walls, and climate-smart botanical engineering.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION (Same Navbar Architecture with Home 2 Active)
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-logo" id="brandLogo" aria-label="TerraVerdé Home">
+          <img src="assets/images/logo-transparent.png" alt="TerraVerdé - Rooftop &amp; Terrace" class="brand-logo-img logo-light" width="165" height="48">
+          <img src="assets/images/logo-dark.png" alt="TerraVerdé - Rooftop &amp; Terrace" class="brand-logo-img logo-dark" width="165" height="48">
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-desktop">
+          <li class="nav-item-dropdown">
+            <a href="home-2.html" class="nav-link active dropdown-toggle-btn" id="homeDropdownBtn" aria-haspopup="true">
+              <span>Home</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <div class="dropdown-menu" aria-label="Home Submenu">
+              <a href="index.html" class="dropdown-item">Home 1 (Signature)</a>
+              <a href="home-2.html" class="dropdown-item active">Home 2 (Editorial)</a>
+            </div>
+          </li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="projects-gallery.html" class="nav-link">Projects Gallery</a></li>
+          <li><a href="plant-selection.html" class="nav-link">Plant Selection</a></li>
+          <li><a href="maintenance-plans.html" class="nav-link">Maintenance Plans</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Right Side Controls & CTA & Login -->
+        <div class="nav-controls">
+          <button type="button" class="control-btn theme-toggle-btn" aria-label="Toggle dark/light theme" id="themeToggleBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+          
+          <button type="button" class="control-btn rtl-toggle-btn" aria-label="Toggle text direction" id="rtlToggleBtn">
+            RTL
+          </button>
+
+          <!-- Login Button in Navbar -->
+          <a href="login.html" class="btn-login" id="navLoginBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+            <span>Login</span>
+          </a>
+
+          <!-- Hamburger Button (Tablet & Mobile) -->
+          <button type="button" class="hamburger-btn" aria-label="Open mobile menu" id="hamburgerBtn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer Overlay -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay">
+    <div class="mobile-nav-drawer" id="mobileNavDrawer">
+      
+      <div class="mobile-drawer-header">
+        <a href="index.html" class="brand-logo" aria-label="TerraVerdé Home">
+          <img src="assets/images/logo-transparent.png" alt="TerraVerdé - Rooftop &amp; Terrace" class="brand-logo-img logo-light" width="145" height="42">
+          <img src="assets/images/logo-dark.png" alt="TerraVerdé - Rooftop &amp; Terrace" class="brand-logo-img logo-dark" width="145" height="42">
+        </a>
+        <button type="button" class="btn-icon close-drawer-btn" aria-label="Close mobile menu" id="closeDrawerBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <nav class="mobile-nav-links" aria-label="Mobile Navigation Menu">
+        <div>
+          <a href="#" class="mobile-nav-link mobile-dropdown-toggle active">
+            <span>Home</span>
+            <svg class="dropdown-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </a>
+          <div class="mobile-sub-menu">
+            <a href="index.html" class="mobile-sub-link">Home 1 (Signature)</a>
+            <a href="home-2.html" class="mobile-sub-link active">Home 2 (Editorial)</a>
+          </div>
+        </div>
+        <a href="services.html" class="mobile-nav-link">Services</a>
+        <a href="projects-gallery.html" class="mobile-nav-link">Projects Gallery</a>
+        <a href="plant-selection.html" class="mobile-nav-link">Plant Selection</a>
+        <a href="maintenance-plans.html" class="mobile-nav-link">Maintenance Plans</a>
+        <a href="about.html" class="mobile-nav-link">About</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+      </nav>
+
+      <div class="mobile-drawer-footer">
+        <div class="mobile-controls-row">
+          <button type="button" class="btn btn-secondary btn-sm theme-toggle-btn" style="flex: 1;">Toggle Theme</button>
+          <button type="button" class="btn btn-secondary btn-sm rtl-toggle-btn" style="flex: 1;">RTL</button>
+        </div>
+        <a href="login.html" class="btn btn-secondary btn-sm mobile-login-btn" style="width: 100%;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          <span>Client Portal Login</span>
+        </a>
+        <a href="contact.html" class="btn btn-primary" style="width: 100%;">Book a Free Site Visit</a>
+      </div>
+
+    </div>
+  </div>
+
+  <main id="mainContent">
+
+    <!-- ==========================================================================
+         SECTION 1: ARCHITECTURAL BENTO SHOWCASE HERO
+         ========================================================================== -->
+    <section class="h2-hero-section" id="h2HeroSection">
+      <div class="container">
+        
+        <!-- Hero Header -->
+        <div class="h2-hero-header">
+          <span class="eyebrow">BOTANICAL ARCHITECTURE &amp; SKY LIVING</span>
+          <h1 class="hero-heading serif">
+            Sculpting Private Sky Sanctuaries &amp; Luxury Terrace Landscapes
+          </h1>
+          <p class="hero-lead">
+            TerraVerde merges structural wind engineering with regenerative rooftop ecology, designing custom penthouse living retreats, vertical botanicals, and automated climate micro-gardens.
+          </p>
+          <div class="h2-hero-header-actions">
+            <a href="contact.html" class="btn btn-primary btn-lg" id="h2HeroCta">
+              <span>Book Architectural Site Visit</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#h2StyleSelectorSection" class="btn btn-secondary btn-lg">Explore Garden Aesthetics</a>
+          </div>
+        </div>
+
+        <!-- Bento Grid Showcase -->
+        <div class="h2-hero-bento-grid">
+          
+          <!-- Bento Item 1: Large Panoramic Rooftop Showcase -->
+          <div class="h2-bento-main">
+            <img src="assets/images/home-2/home2-hero-split.jpg" alt="Architectural rooftop penthouse garden with glass canopy and ambient lights" loading="eager">
+            <div class="h2-bento-overlay">
+              <div class="h2-bento-tag-top">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+                <span>+42m Skyline Elevation — Wind &amp; Load Certified</span>
+              </div>
+              <div class="h2-bento-bottom-info">
+                <p>"We turn harsh concrete rooftop slabs into living architectural tapestries with sustainable irrigation."</p>
+                <span class="architect-name">Elena Cruz — Principal Landscape Architect</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento Item 2: Interactive Terrace Project Estimator Card -->
+          <div class="h2-bento-calculator">
+            <div>
+              <div class="h2-bento-calc-header">
+                <h3 class="h2-bento-calc-title serif">Rooftop Feasibility Tool</h3>
+                <span class="h2-bento-badge-free">Complimentary</span>
+              </div>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+                Select your parameters to receive a custom 3D botanical proposal and structural weight assessment.
+              </p>
+              
+              <div class="h2-bento-calc-form">
+                <div class="h2-bento-input-group">
+                  <label>Rooftop Type</label>
+                  <select class="h2-bento-select">
+                    <option>Penthouse Full Rooftop</option>
+                    <option>Wrap-around Balcony Terrace</option>
+                    <option>Commercial Skyline Lounge</option>
+                    <option>Residential Duplex Deck</option>
+                  </select>
+                </div>
+                <div class="h2-bento-input-group">
+                  <label>Approximate Area</label>
+                  <select class="h2-bento-select">
+                    <option>Compact (300 - 800 sq ft)</option>
+                    <option>Medium (800 - 1,800 sq ft)</option>
+                    <option>Grand Estate (1,800 - 4,000+ sq ft)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <a href="contact.html" class="btn btn-accent" style="width: 100%; text-align: center; justify-content: center;">
+              <span>Calculate &amp; Book On-Site</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+
+          <!-- Bento Item 3: Engineering Standards & Live Telemetry -->
+          <div class="h2-bento-metrics">
+            <div class="h2-metric-item">
+              <div class="h2-metric-num serif">100%</div>
+              <div class="h2-metric-label">Wind-Anchor Safety</div>
+            </div>
+            <div class="h2-metric-item">
+              <div class="h2-metric-num serif">-4.5°C</div>
+              <div class="h2-metric-label">Microclimate Cooling</div>
+            </div>
+            <div class="h2-metric-item">
+              <div class="h2-metric-num serif">350+</div>
+              <div class="h2-metric-label">Flora Varieties</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 2: GARDEN STYLE SELECTOR
+         ========================================================================== -->
+    <section class="services-section" id="h2StyleSelectorSection">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="eyebrow">CURATED DESIGN AESTHETICS</span>
+          <h2 class="section-title serif">Find Your Rooftop Garden Aesthetic</h2>
+          <p class="section-subtitle">
+            Explore tailored botanical moods curated for structural micro-climates, direct sun exposure, and modern outdoor lifestyles.
+          </p>
+        </div>
+
+        <div class="h2-styles-grid">
+          
+          <!-- Style 1 -->
+          <article class="style-card">
+            <div class="card-media">
+              <img src="assets/images/home-2/home2-style-mediterranean.jpg" alt="Mediterranean Oasis Rooftop Style" loading="lazy">
+              <span class="card-badge">Full Sun</span>
+            </div>
+            <div class="style-card-body">
+              <div class="style-palette-row">
+                <span class="style-color-dot" style="background: #C8785A;" title="Terracotta"></span>
+                <span class="style-color-dot" style="background: #E6DAC8;" title="Limestone"></span>
+                <span class="style-color-dot" style="background: #7A68A6;" title="Lavender"></span>
+              </div>
+              <h3 class="card-title serif">Mediterranean Oasis</h3>
+              <p class="card-description">
+                Warm terracotta vessels, fragrant English lavender, ancient dwarf olive trees, and natural limestone paving.
+              </p>
+              <a href="services.html" class="card-action-link">
+                <span>Explore Aesthetic</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Style 2 -->
+          <article class="style-card">
+            <div class="card-media">
+              <img src="assets/images/home-2/home2-style-zen.jpg" alt="Japanese Zen Rooftop Style" loading="lazy">
+              <span class="card-badge">Tranquility</span>
+            </div>
+            <div class="style-card-body">
+              <div class="style-palette-row">
+                <span class="style-color-dot" style="background: #6A7B72;" title="Granite"></span>
+                <span class="style-color-dot" style="background: #E2DDD2;" title="Raked Gravel"></span>
+                <span class="style-color-dot" style="background: #1F4D3A;" title="Pine"></span>
+              </div>
+              <h3 class="card-title serif">Japanese Zen Rooftop</h3>
+              <p class="card-description">
+                Raked granite gravel groundcover, sculptural bonsai pines, stone basins, and tranquil water acoustics.
+              </p>
+              <a href="services.html" class="card-action-link">
+                <span>Explore Aesthetic</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Style 3 -->
+          <article class="style-card">
+            <div class="card-media">
+              <img src="assets/images/home-2/home2-style-nordic.jpg" alt="Nordic Minimalist Terrace Style" loading="lazy">
+              <span class="card-badge">Minimalist</span>
+            </div>
+            <div class="style-card-body">
+              <div class="style-palette-row">
+                <span class="style-color-dot" style="background: #23352C;" title="Charcoal"></span>
+                <span class="style-color-dot" style="background: #DCD6C8;" title="Ash Wood"></span>
+                <span class="style-color-dot" style="background: #91A98F;" title="Sage"></span>
+              </div>
+              <h3 class="card-title serif">Nordic Minimalist</h3>
+              <p class="card-description">
+                Clean architectural ash slatted decking, matte steel cube planters, silver birch, and ornamental feather grasses.
+              </p>
+              <a href="services.html" class="card-action-link">
+                <span>Explore Aesthetic</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Style 4 -->
+          <article class="style-card">
+            <div class="card-media">
+              <img src="assets/images/home-2/home2-style-tropical.jpg" alt="Tropical Sky Sanctuary Style" loading="lazy">
+              <span class="card-badge">Resort Living</span>
+            </div>
+            <div class="style-card-body">
+              <div class="style-palette-row">
+                <span class="style-color-dot" style="background: #A56E42;" title="Teak"></span>
+                <span class="style-color-dot" style="background: #1F4D3A;" title="Deep Emerald"></span>
+                <span class="style-color-dot" style="background: #C8785A;" title="Bird of Paradise"></span>
+              </div>
+              <h3 class="card-title serif">Tropical Sky Sanctuary</h3>
+              <p class="card-description">
+                Deep teak decking, giant fan palms, dramatic orange bird of paradise, and sheltered bamboo privacy screening.
+              </p>
+              <a href="services.html" class="card-action-link">
+                <span>Explore Aesthetic</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3: TRENDING TERRACE PROJECTS
+         ========================================================================== -->
+    <section class="projects-section" id="h2TrendingProjectsSection">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="eyebrow">PORTFOLIO SPOTLIGHT</span>
+          <h2 class="section-title serif">Trending Urban Terrace Commissions</h2>
+          <p class="section-subtitle">
+            An editorial selection of recently completed high-altitude landscape transformations across urban penthouses.
+          </p>
+        </div>
+
+        <div class="trending-grid">
+          
+          <!-- Trending 1 -->
+          <article class="project-card">
+            <div class="card-media">
+              <img src="assets/images/home-2/home2-trending-highgate.jpg" alt="Highgate Penthouse Overlook Project" loading="lazy">
+              <span class="card-badge">London Penthouse</span>
+            </div>
+            <div class="card-body">
+              <div class="trending-meta">
+                <span>1,200 SQ FT</span>
+                <span>COMPLETED 2025</span>
+              </div>
+              <h3 class="card-title serif">Highgate Penthouse Overlook</h3>
+              <p class="card-description">
+                Featuring structural glass windbreaks, dual-zone teak lounge, specimen topiaries, and custom misting pergolas.
+              </p>
+              <a href="projects-gallery.html" class="card-action-link">
+                <span>View Case Study</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Trending 2 -->
+          <article class="project-card">
+            <div class="card-media">
+              <img src="assets/images/home-2/home2-trending-soho.jpg" alt="Soho Loft Vertical Sanctuary Project" loading="lazy">
+              <span class="card-badge">Manhattan Loft</span>
+            </div>
+            <div class="card-body">
+              <div class="trending-meta">
+                <span>850 SQ FT</span>
+                <span>COMPLETED 2026</span>
+              </div>
+              <h3 class="card-title serif">Soho Loft Vertical Sanctuary</h3>
+              <p class="card-description">
+                A 350 sq ft multi-tiered living green wall integrating acoustic felt pockets and recirculating bio-fertilization.
+              </p>
+              <a href="projects-gallery.html" class="card-action-link">
+                <span>View Case Study</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Trending 3 -->
+          <article class="project-card">
+            <div class="card-media">
+              <img src="assets/images/home-2/home2-trending-riverside.jpg" alt="Riverside Terrace Canopy Project" loading="lazy">
+              <span class="card-badge">Riverside Terrace</span>
+            </div>
+            <div class="card-body">
+              <div class="trending-meta">
+                <span>1,600 SQ FT</span>
+                <span>COMPLETED 2026</span>
+              </div>
+              <h3 class="card-title serif">Riverside Terrace Canopy</h3>
+              <p class="card-description">
+                Full-perimeter container arrangements, sunset dining pergola, automated LED floor lights, and weather-smart irrigation.
+              </p>
+              <a href="projects-gallery.html" class="card-action-link">
+                <span>View Case Study</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 4: VERTICAL GARDEN SHOWCASE
+         ========================================================================== -->
+    <section class="why-section" id="h2VerticalShowcaseSection">
+      <div class="container">
+        
+        <div class="h2-vertical-spotlight">
+          
+          <!-- Left Content -->
+          <div>
+            <span class="eyebrow">BIO-ENGINEERING SHOWCASE</span>
+            <h2 class="section-title serif">Living Architecture: Engineered Green Walls</h2>
+            <p class="section-subtitle" style="margin-left: 0; text-align: left;">
+              Our modular living wall systems turn vertical structural boundaries into high-performance natural insulation and micro-climate temperature regulators.
+            </p>
+
+            <div class="h2-wall-specs-list">
+              <div class="h2-spec-box">
+                <div class="h2-spec-val serif">-4.5°C</div>
+                <div class="h2-spec-label">Urban Heat Reduction</div>
+              </div>
+              <div class="h2-spec-box">
+                <div class="h2-spec-val serif">32 dB</div>
+                <div class="h2-spec-label">Acoustic Noise Dampening</div>
+              </div>
+              <div class="h2-spec-box">
+                <div class="h2-spec-val serif">100%</div>
+                <div class="h2-spec-label">Recirculating Closed-Loop</div>
+              </div>
+              <div class="h2-spec-box">
+                <div class="h2-spec-val serif">24 Var.</div>
+                <div class="h2-spec-label">Botanical Mosaic Densities</div>
+              </div>
+            </div>
+
+            <div style="margin-top: 2rem;">
+              <a href="services.html" class="btn btn-primary">Discover Vertical Wall Systems</a>
+            </div>
+          </div>
+
+          <!-- Right Showcase Real Image -->
+          <div class="card-media" style="border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); border: 1px solid var(--border-subtle); aspect-ratio: 4/3; overflow: hidden;">
+            <img src="assets/images/home-2/home2-vertical-hero.jpg" alt="Engineered Living Green Wall System Showcase" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 5: CONTAINER GARDEN COLLECTION
+         ========================================================================== -->
+    <section class="services-section" id="h2ContainersSection">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="eyebrow">ARTISANAL VESSELS &amp; PLANTERS</span>
+          <h2 class="section-title serif">Artisanal Container &amp; Vessel Curation</h2>
+          <p class="section-subtitle">
+            Engineered specifically for weight-bearing rooftop surfaces, our planters blend artisanal craftsmanship with thermal root protection.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Container 1 -->
+          <article class="project-card">
+            <div class="card-media">
+              <img src="assets/images/home-2/home2-container-fiberclay.jpg" alt="Fiber-Clay Architectural Planters" loading="lazy">
+              <span class="card-badge">Lightweight</span>
+            </div>
+            <div class="card-body">
+              <span class="project-tag">Modern Minimalist</span>
+              <h3 class="card-title serif">Fiber-Clay Vessels</h3>
+              <p class="card-description">
+                Ultra-lightweight composite blend of fiberglass and natural clay offering high frost resistance and refined architectural textures.
+              </p>
+              <div class="plant-specs">
+                <span class="plant-spec-pill">70% Lighter than Concrete</span>
+                <span class="plant-spec-pill">UV-Shielded</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Container 2 -->
+          <article class="project-card">
+            <div class="card-media">
+              <img src="assets/images/home-2/home2-container-corten.jpg" alt="Corten Steel Weathered Planter Troughs" loading="lazy">
+              <span class="card-badge">Industrial Chic</span>
+            </div>
+            <div class="card-body">
+              <span class="project-tag">Weathering Steel</span>
+              <h3 class="card-title serif">Corten Steel Troughs</h3>
+              <p class="card-description">
+                Develops an organic, self-protecting golden-rust patina over time. Built-in thermal insulation liners safeguard sensitive roots from sun heat.
+              </p>
+              <div class="plant-specs">
+                <span class="plant-spec-pill">Lifetime Durability</span>
+                <span class="plant-spec-pill">Insulated Walls</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Container 3 -->
+          <article class="project-card">
+            <div class="card-media">
+              <img src="assets/images/home-2/home2-container-terracotta.jpg" alt="Terracotta Hand-thrown Amphorae" loading="lazy">
+              <span class="card-badge">Artisanal</span>
+            </div>
+            <div class="card-body">
+              <span class="project-tag">Mediterranean</span>
+              <h3 class="card-title serif">Terracotta Amphorae</h3>
+              <p class="card-description">
+                Handcrafted Tuscan clay pots providing natural porous breathability for olive trees, cascading rosemary, and culinary herbs.
+              </p>
+              <div class="plant-specs">
+                <span class="plant-spec-pill">Natural Breathability</span>
+                <span class="plant-spec-pill">Handmade</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 6: IRRIGATION SOLUTIONS (ONE-BY-ONE ALTERNATING LAYOUT)
+         ========================================================================== -->
+    <section class="transformation-section" id="h2IrrigationSection">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="eyebrow">SMART HYDRAULIC ENGINEERING</span>
+          <h2 class="section-title serif">Smart Water Management for High-Altitude Flora</h2>
+          <p class="section-subtitle">
+            Rooftop wind and elevated sun exposure demand precision micro-watering. Our automated systems ensure zero plant stress and zero runoff.
+          </p>
+        </div>
+
+        <div class="h2-irrig-stacked-container">
+          
+          <!-- Row 1: Image Left, Content Right -->
+          <div class="h2-irrig-row">
+            <div class="h2-irrig-media">
+              <img src="assets/images/home-2/home2-irrig-tech-drip.jpg" alt="Zero-Grid Solar Drip System" loading="lazy">
+              <span class="h2-irrig-badge">0% Water Runoff</span>
+            </div>
+            <div class="h2-irrig-content">
+              <span class="eyebrow" style="margin-bottom: 0.5rem;">AUTONOMOUS DRIP SYSTEMS</span>
+              <h3 class="h2-irrig-title serif">Zero-Grid Solar Drip &amp; Hydronic Automation</h3>
+              <p class="h2-irrig-desc">
+                Autonomous photovoltaic controllers connected to pressure-compensating micro-drip lines deliver exact milliliter doses to each specimen pot without outdoor electrical wiring or wasted run-off.
+              </p>
+              <div class="h2-irrig-feature-list">
+                <div class="h2-irrig-feature-item">
+                  <div class="h2-irrig-icon">✓</div>
+                  <span>Solar-Powered Battery Backup</span>
+                </div>
+                <div class="h2-irrig-feature-item">
+                  <div class="h2-irrig-icon">✓</div>
+                  <span>Individual Pot Dosing Valves</span>
+                </div>
+                <div class="h2-irrig-feature-item">
+                  <div class="h2-irrig-icon">✓</div>
+                  <span>Concealed Sub-Deck Tubing</span>
+                </div>
+                <div class="h2-irrig-feature-item">
+                  <div class="h2-irrig-icon">✓</div>
+                  <span>Seasonal Flow Optimization</span>
+                </div>
+              </div>
+              <a href="services.html" class="btn btn-secondary btn-sm" style="align-self: flex-start;">
+                <span>View Irrigation Engineering</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Row 2: Content Left, Image Right (Reverse) -->
+          <div class="h2-irrig-row reverse">
+            <div class="h2-irrig-content">
+              <span class="eyebrow" style="margin-bottom: 0.5rem;">CLIMATE-RESPONSIVE SENSORS</span>
+              <h3 class="h2-irrig-title serif">Hyper-Local Microclimate Sensors &amp; Misting</h3>
+              <p class="h2-irrig-desc">
+                Integrated wind anemometers, barometric sensors, and ambient hygrometers automatically suspend cycles during sudden rainfall and trigger cooling micro-misting during harsh afternoon rooftop heatwaves.
+              </p>
+              <div class="h2-irrig-feature-list">
+                <div class="h2-irrig-feature-item">
+                  <div class="h2-irrig-icon">✓</div>
+                  <span>Anemometer Wind Suspension</span>
+                </div>
+                <div class="h2-irrig-feature-item">
+                  <div class="h2-irrig-icon">✓</div>
+                  <span>Ultrasonic Micro-Cooling Mist</span>
+                </div>
+                <div class="h2-irrig-feature-item">
+                  <div class="h2-irrig-icon">✓</div>
+                  <span>Freeze-Thaw Auto Drain Valve</span>
+                </div>
+                <div class="h2-irrig-feature-item">
+                  <div class="h2-irrig-icon">✓</div>
+                  <span>Remote Smartphone Controls</span>
+                </div>
+              </div>
+              <a href="services.html" class="btn btn-secondary btn-sm" style="align-self: flex-start;">
+                <span>Explore Sensor Controls</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+            <div class="h2-irrig-media">
+              <img src="assets/images/home-2/home2-irrig-tech-sensor.jpg" alt="Weather Sensor & Microclimate Misting" loading="lazy">
+              <span class="h2-irrig-badge">Live Sensor Telemetry</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 7: 4-STAGE ARCHITECTURAL SKY TRANSFORMATION METHODOLOGY
+         ========================================================================== -->
+    <section class="testimonials-section" id="h2ClientStoriesSection">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="eyebrow">ARCHITECTURAL DELIVERY FRAMEWORK</span>
+          <h2 class="section-title serif">Our 4-Stage Architectural Sky Transformation</h2>
+          <p class="section-subtitle">
+            From certified structural load calculations to off-site modular pre-assembly and precision botanical commissioning.
+          </p>
+        </div>
+
+        <div class="h2-methodology-grid">
+          
+          <!-- Left Timeline Steps -->
+          <div class="h2-timeline-steps">
+            
+            <!-- Phase 1 -->
+            <div class="h2-step-card">
+              <span class="h2-step-num-pill serif">PHASE 01</span>
+              <div class="h2-step-info">
+                <h4 class="serif">Structural Load &amp; Wind Shear Audit</h4>
+                <p>Licensed structural engineers analyze dead/live load roof thresholds, membrane integrity, waterproofing barriers, and high-altitude wind uplift forces.</p>
+              </div>
+            </div>
+
+            <!-- Phase 2 -->
+            <div class="h2-step-card">
+              <span class="h2-step-num-pill serif">PHASE 02</span>
+              <div class="h2-step-info">
+                <h4 class="serif">3D Microclimate &amp; Solar Simulation</h4>
+                <p>Digital sunlight tracking and thermal vortex mapping determine custom shade pergola positioning, windbreak glass heights, and tailored plant species zoning.</p>
+              </div>
+            </div>
+
+            <!-- Phase 3 -->
+            <div class="h2-step-card">
+              <span class="h2-step-num-pill serif">PHASE 03</span>
+              <div class="h2-step-info">
+                <h4 class="serif">Modular Off-Site Prefabrication &amp; Hoisting</h4>
+                <p>Custom Corten troughs, lightweight fiber-clay planters, and sub-deck support pedestals are precision-built off-site for rapid crane assembly with zero rooftop mess.</p>
+              </div>
+            </div>
+
+            <!-- Phase 4 -->
+            <div class="h2-step-card">
+              <span class="h2-step-num-pill serif">PHASE 04</span>
+              <div class="h2-step-info">
+                <h4 class="serif">Horticultural Commissioning &amp; Telemetry Sync</h4>
+                <p>Acclimated mature specimens are planted with enriched aeration soil, living walls are plumbed, and automated solar drip sensors are calibrated.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Sticky Project Showcase -->
+          <div class="h2-method-sticky-showcase">
+            <div class="h2-method-showcase-media">
+              <img src="assets/images/home-2/home2-method-complete.jpg" alt="Completed Penthouse Sky Sanctuary Transformation" loading="lazy">
+            </div>
+            <div class="h2-method-showcase-body">
+              <div class="h2-method-showcase-badge">
+                <span>100% Turnkey Delivery</span>
+              </div>
+              <h3 class="serif" style="font-size: 1.25rem; color: var(--forest); margin-bottom: 0.5rem;">The Sky Sanctuary Standard</h3>
+              <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.55; margin-bottom: 1.25rem;">
+                Every commissioned terrace includes a full structural compliance certificate, 5-year waterproofing warranty, and seasonal horticultural tuning.
+              </p>
+              <div style="display: flex; gap: 0.75rem;">
+                <a href="contact.html" class="btn btn-primary btn-sm" style="flex: 1; justify-content: center;">
+                  <span>Book Site Audit</span>
+                </a>
+                <a href="projects-gallery.html" class="btn btn-secondary btn-sm">
+                  <span>View Projects</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 8: FINAL FREE SITE VISIT CTA
+         ========================================================================== -->
+    <section class="cta-section" id="h2FinalCtaSection">
+      <div class="container">
+        
+        <div class="cta-box">
+          
+          <!-- Left Content & Interactive Site Form -->
+          <div class="cta-content">
+            <span class="eyebrow" style="background: rgba(255,255,255,0.15); color: #FFF;">ELEVATE YOUR ROOFTOP</span>
+            <h2 class="cta-title serif">Commission Your Custom Rooftop Haven</h2>
+            <p class="cta-desc">
+              Book a complimentary architectural on-site consultation. Our design team measures structural capacities and produces your custom 3D botanical concept.
+            </p>
+
+            <div class="cta-buttons" style="margin-top: 1.5rem;">
+              <a href="contact.html" class="btn btn-accent" id="h2BookBtn">
+                <span>Book Free Site Evaluation</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <a href="projects-gallery.html" class="btn btn-secondary">Explore Gallery</a>
+            </div>
+          </div>
+
+          <!-- Right Sunset Panorama Visual Real Photo -->
+          <div class="cta-visual">
+            <img src="assets/images/home-2/home2-cta-panorama.jpg" alt="Sunset Panorama Rooftop Garden Commission" loading="lazy">
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+      <!-- ==========================================================================
+       SITE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer" id="siteFooter">
+    <div class="container">
+      
+      <div class="footer-grid">
+        
+        <!-- Column 1: Brand Info & Socials -->
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="TerraVerdé Home">
+            <img src="assets/images/logo-transparent.png" alt="TerraVerdé - Rooftop &amp; Terrace" class="brand-logo-img logo-light" width="165" height="48">
+            <img src="assets/images/logo-dark.png" alt="TerraVerdé - Rooftop &amp; Terrace" class="brand-logo-img logo-dark" width="165" height="48">
+          </a>
+          <p class="footer-desc">
+            Pioneering luxury rooftop architecture, sustainable botanical sanctuaries, and custom urban terraces designed for elevated outdoor living.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="Pinterest">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 20l4-9-1.5-3.5 3 1.5 2 5-3 6"></path></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation -->
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home 1 (Signature)</a></li>
+            <li><a href="home-2.html" class="footer-link">Home 2 (Editorial)</a></li>
+            <li><a href="services.html" class="footer-link">Services Overview</a></li>
+            <li><a href="projects-gallery.html" class="footer-link">Projects Gallery</a></li>
+            <li><a href="plant-selection.html" class="footer-link">Plant Selection</a></li>
+            <li><a href="maintenance-plans.html" class="footer-link">Maintenance Plans</a></li>
+            <li><a href="about.html" class="footer-link">About TerraVerdé</a></li>
+            <li><a href="contact.html" class="footer-link">Contact &amp; Site Visit</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Specialties -->
+        <div>
+          <h4 class="footer-heading">Specialties</h4>
+          <ul class="footer-links">
+            <li><a href="services.html" class="footer-link">Terrace Landscape Design</a></li>
+            <li><a href="services.html" class="footer-link">Rooftop Container Gardens</a></li>
+            <li><a href="services.html" class="footer-link">Vertical Green Walls</a></li>
+            <li><a href="services.html" class="footer-link">Smart Drip Irrigation</a></li>
+            <li><a href="maintenance-plans.html" class="footer-link">Seasonal Plant Care</a></li>
+            <li><a href="services.html" class="footer-link">Windbreak &amp; Pergolas</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact & Global Studios -->
+        <div class="footer-contact-col">
+          <h4 class="footer-heading">Contact &amp; Studios</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">
+              <span class="footer-contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></span>
+              <div>
+                <strong>NY Studio:</strong> 450 Hudson St, Tribeca, NY 10014
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <span class="footer-contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><line x1="9" y1="22" x2="9" y2="22.01"></line><line x1="15" y1="22" x2="15" y2="22.01"></line><line x1="9" y1="6" x2="9" y2="6.01"></line><line x1="15" y1="6" x2="15" y2="6.01"></line><line x1="9" y1="10" x2="9" y2="10.01"></line><line x1="15" y1="10" x2="15" y2="10.01"></line><line x1="9" y1="14" x2="9" y2="14.01"></line><line x1="15" y1="14" x2="15" y2="14.01"></line><line x1="9" y1="18" x2="9" y2="18.01"></line><line x1="15" y1="18" x2="15" y2="18.01"></line></svg></span>
+              <div>
+                <strong>London Atelier:</strong> 28 Berkeley Square, Mayfair, London W1J 6EN
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <span class="footer-contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></span>
+              <div>
+                <strong>Direct Line:</strong> <a href="tel:+18004928377" class="footer-contact-link">+1 (800) 492-8377</a>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <span class="footer-contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></span>
+              <div>
+                <strong>Inquiries:</strong> <a href="mailto:concierge@terraverde-gardens.com" class="footer-contact-link">concierge@terraverde-gardens.com</a>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <span class="footer-contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span>
+              <div>
+                <strong>Hours:</strong> Mon &ndash; Sat: 8:00 AM &ndash; 7:00 PM EST
+              </div>
+            </div>
+          </div>
+          <div style="margin-top: 1.25rem;">
+            <a href="contact.html" class="btn btn-accent btn-sm" style="width: 100%; justify-content: center;">Book Free Site Visit &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 TerraVerd&eacute; Rooftop &amp; Terrace Garden Design. All rights reserved.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="contact.html" class="footer-bottom-link">Site Consultation</a>
+          <span style="opacity: 0.3;">&bull;</span>
+          <a href="about.html" class="footer-bottom-link">Privacy Policy</a>
+          <span style="opacity: 0.3;">&bull;</span>
+          <a href="about.html" class="footer-bottom-link">Terms of Service</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       LOGIN MODAL
+       ========================================================================== -->
+  <div class="login-modal" id="loginModal">
+    <div class="login-modal-box">
+      <div class="login-modal-header">
+        <h3 class="serif">Client Portal Login</h3>
+        <button type="button" class="login-modal-close" id="loginModalClose" aria-label="Close login modal">✕</button>
+      </div>
+      <p class="login-modal-desc">
+        Access your real-time terrace irrigation telemetry, 3D architectural plans, and seasonal maintenance schedule.
+      </p>
+      <form class="login-modal-form" id="loginModalForm" onsubmit="event.preventDefault(); alert('Authentication successful. Redirecting to client portal dashboard...'); document.getElementById('loginModal').classList.remove('active');">
+        <div class="form-group">
+          <label class="form-label" for="loginEmail">Email Address</label>
+          <input type="email" id="loginEmail" class="form-input" placeholder="name@example.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" class="form-input" placeholder="••••••••" required>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; font-size: 0.85rem;">
+          <label style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer;">
+            <input type="checkbox"> Remember me
+          </label>
+          <a href="#forgot" style="color: var(--forest); font-weight: 600;">Forgot Password?</a>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Sign In to Client Portal</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       FLOATING BACK TO TOP BUTTON (Exact Screenshot Match with Glowing Gold Ring)
+       ========================================================================== -->
+  <button type="button" class="floating-back-to-top" id="floatingBackToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

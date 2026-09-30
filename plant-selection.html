@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant Selection Guide — Climate-Resilient Rooftop Flora | TerraVerde</title>
+  <meta name="description"
+    content="Discover curated botanical selections for rooftop terraces: sun-loving Mediterranean trees, shade-tolerant vertical species, and drought-hardy low-maintenance architectural plants.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <!-- Google Fonts Preconnect & Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+  <!-- ==========================================================================
+       SITE HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <nav class="navbar">
+
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-logo" id="brandLogo" aria-label="TerraVerdé Home">
+          <img src="assets/images/logo-transparent.png" alt="TerraVerdé - Rooftop &amp; Terrace" class="brand-logo-img logo-light" width="165" height="48">
+          <img src="assets/images/logo-dark.png" alt="TerraVerdé - Rooftop &amp; Terrace" class="brand-logo-img logo-dark" width="165" height="48">
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-desktop">
+          <li class="nav-item-dropdown">
+            <a href="index.html" class="nav-link dropdown-toggle-btn" id="homeDropdownBtn" aria-haspopup="true">
+              <span>Home</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <div class="dropdown-menu" aria-label="Home Submenu">
+              <a href="index.html" class="dropdown-item">Home 1 (Signature)</a>
+              <a href="home-2.html" class="dropdown-item">Home 2 (Editorial)</a>
+            </div>
+          </li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="projects-gallery.html" class="nav-link">Projects Gallery</a></li>
+          <li><a href="plant-selection.html" class="nav-link active">Plant Selection</a></li>
+          <li><a href="maintenance-plans.html" class="nav-link">Maintenance Plans</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Right Side Controls & CTA & Login -->
+        <div class="nav-controls">
+          <button type="button" class="control-btn theme-toggle-btn" aria-label="Toggle dark/light theme"
+            id="themeToggleBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          </button>
+
+          <button type="button" class="control-btn rtl-toggle-btn" aria-label="Toggle text direction" id="rtlToggleBtn">
+            RTL
+          </button>
+
+          <!-- Login Button in Navbar -->
+          <a href="login.html" class="btn-login" id="navLoginBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+            <span>Login</span>
+          </a>
+
+          <!-- Hamburger Button (Tablet & Mobile) -->
+          <button type="button" class="hamburger-btn" aria-label="Open mobile menu" id="hamburgerBtn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer Overlay -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay">
+    <div class="mobile-nav-drawer" id="mobileNavDrawer">
+
+      <div class="mobile-drawer-header">
+        <a href="index.html" class="brand-logo" aria-label="TerraVerdé Home">
+          <img src="assets/images/logo-transparent.png" alt="TerraVerdé - Rooftop &amp; Terrace" class="brand-logo-img logo-light" width="145" height="42">
+          <img src="assets/images/logo-dark.png" alt="TerraVerdé - Rooftop &amp; Terrace" class="brand-logo-img logo-dark" width="145" height="42">
+        </a>
+        <button type="button" class="btn-icon close-drawer-btn" aria-label="Close mobile menu" id="closeDrawerBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="mobile-nav-links">
+        <div class="mobile-dropdown-item">
+          <a href="#" class="mobile-nav-link mobile-dropdown-toggle">
+            <span>Home Variations</span>
+            <svg class="dropdown-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+          <div class="mobile-sub-menu">
+            <a href="index.html" class="mobile-sub-link">Home 1 (Signature)</a>
+            <a href="home-2.html" class="mobile-sub-link">Home 2 (Editorial)</a>
+          </div>
+        </div>
+        <a href="services.html" class="mobile-nav-link">Services</a>
+        <a href="projects-gallery.html" class="mobile-nav-link">Projects Gallery</a>
+        <a href="plant-selection.html" class="mobile-nav-link active">Plant Selection</a>
+        <a href="maintenance-plans.html" class="mobile-nav-link">Maintenance Plans</a>
+        <a href="about.html" class="mobile-nav-link">About</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+      </nav>
+
+      <div class="mobile-drawer-footer">
+        <div class="mobile-controls-row">
+          <button type="button" class="btn btn-secondary btn-sm theme-toggle-btn" style="flex: 1;">Toggle Theme</button>
+          <button type="button" class="btn btn-secondary btn-sm rtl-toggle-btn" style="flex: 1;">RTL</button>
+        </div>
+        <a href="login.html" class="btn btn-secondary btn-sm mobile-login-btn" style="width: 100%;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          <span>Client Portal Login</span>
+        </a>
+        <a href="contact.html" class="btn btn-primary" style="width: 100%;">Book a Free Site Visit</a>
+      </div>
+
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         SECTION 1: PLANT SELECTION HERO
+         ========================================================================== -->
+    <section class="plant-hero-section" id="plantHeroSection">
+      <div class="container">
+
+        <div class="plant-hero-header">
+          <span class="eyebrow">HORTICULTURAL ARCHITECTURE &bull; MICROCLIMATE MATCHED</span>
+          <h1 class="plant-hero-title serif">Curated Botanical Selection Guide</h1>
+          <p class="plant-hero-lead">
+            Every rooftop microclimate presents unique wind, sun, and root space challenges. Explore species proven to
+            flourish on elevated terraces and urban living walls.
+          </p>
+
+          <!-- Interactive Filter Jump Bar -->
+          <div class="plant-filter-bar" id="plantFilterBar">
+            <a href="#plantSunLovingSection" class="plant-filter-btn active"><svg width="15" height="15"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg> <span>Sun-Loving Species</span></a>
+            <a href="#plantShadeFriendlySection" class="plant-filter-btn"><svg width="15" height="15"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+              </svg> <span>Shade &amp; Sheltered</span></a>
+            <a href="#plantLowMaintenanceSection" class="plant-filter-btn"><svg width="15" height="15"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+              </svg> <span>Low-Maintenance &amp; Tropical</span></a>
+            <a href="#plantSelectorCtaSection" class="plant-filter-btn"><svg width="14" height="14" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                </polygon>
+              </svg> <span>Interactive Plant Quiz</span></a>
+          </div>
+        </div>
+
+        <!-- Hero Botanical Nursery Banner -->
+        <div class="srv-hero-media-banner">
+          <img src="assets/images/plants/plant-guide-hero.jpg" alt="Botanical Nursery and Rooftop Garden Conservatory"
+            loading="eager">
+          <div class="srv-hero-floating-badge">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--warm-gold)" stroke-width="2.2">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+            </svg>
+            <div>
+              <div style="font-weight: 700; font-size: 0.92rem; color: #FFFFFF;">100% Acclimatized Botanical Stock</div>
+              <div style="font-size: 0.75rem; color: rgba(255,255,255,0.75);">Pre-conditioned for high-wind velocity and
+                elevated thermal swings</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 2: SUN-LOVING PLANTS
+         ========================================================================== -->
+    <section class="plant-section" id="plantSunLovingSection">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="eyebrow">HIGH SOLAR EXPOSURE</span>
+          <h2 class="section-title serif">Sun-Loving Rooftop Species</h2>
+          <p class="section-subtitle">
+            Engineered for south-facing unshaded rooftops with intense UV radiation, high thermal reflectivity, and open
+            wind exposure.
+          </p>
+        </div>
+
+        <div class="plant-species-grid">
+
+          <!-- Plant 1: Centenarian Olive Tree -->
+          <article class="plant-species-card">
+            <div class="plant-species-media">
+              <img src="assets/images/plants/plant-sun-olive.jpg" alt="Mediterranean Olive Tree" loading="lazy">
+              <span class="plant-badge-category">Arboreal Feature</span>
+              <span class="plant-badge-wind">Wind Hardy</span>
+            </div>
+            <div class="plant-species-body">
+              <span class="plant-botanical-name">Olea Europaea</span>
+              <h3 class="plant-common-name serif">Mediterranean Olive Tree</h3>
+              <p class="plant-desc-fixed">
+                Sculptural evergreen specimen tree with silvery-green foliage, resilient to intense rooftop sun, coastal
+                salt breezes, and extended dry spells.
+              </p>
+
+              <div class="plant-badges-row">
+                <div class="plant-metric-box">
+                  <span class="plant-metric-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="5"></circle>
+                      <line x1="12" y1="1" x2="12" y2="3"></line>
+                      <line x1="12" y1="21" x2="12" y2="23"></line>
+                      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                      <line x1="1" y1="12" x2="3" y2="12"></line>
+                      <line x1="21" y1="12" x2="23" y2="12"></line>
+                      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg></span>
+                  <span class="plant-metric-title">Light</span>
+                  <span class="plant-metric-value">Full Sun 6h+</span>
+                </div>
+                <div class="plant-metric-box">
+                  <span class="plant-metric-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                    </svg></span>
+                  <span class="plant-metric-title">Water</span>
+                  <span class="plant-metric-value">Low / Drought</span>
+                </div>
+                <div class="plant-metric-box">
+                  <span class="plant-metric-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+                      <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+                    </svg></span>
+                  <span class="plant-metric-title">Care</span>
+                  <span class="plant-metric-value">Low Care</span>
+                </div>
+              </div>
+
+              <div class="plant-card-footer">
+                <a href="#plantSelectorCtaSection" class="plant-inquire-btn">
+                  <span>Inquire for Rooftop Spec</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Plant 2: French Lavender & Rosemary -->
+          <article class="plant-species-card">
+            <div class="plant-species-media">
+              <img src="assets/images/plants/plant-sun-lavender.jpg" alt="French Lavender and Rosemary" loading="lazy">
+              <span class="plant-badge-category">Aromatic Shrub</span>
+              <span class="plant-badge-wind">Pollinator Magnet</span>
+            </div>
+            <div class="plant-species-body">
+              <span class="plant-botanical-name">Lavandula Angustifolia</span>
+              <h3 class="plant-common-name serif">French Lavender &amp; Rosemary</h3>
+              <p class="plant-desc-fixed">
+                Fragrant purple blossoms and woody aromatic needle foliage that deter urban pests while thriving in
+                well-draining lightweight terrace.
+              </p>
+
+              <div class="plant-badges-row">
+                <div class="plant-metric-box">
+                  <span class="plant-metric-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="5"></circle>
+                      <line x1="12" y1="1" x2="12" y2="3"></line>
+                      <line x1="12" y1="21" x2="12" y2="23"></line>
+                      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                      <line x1="1" y1="12" x2="3" y2="12"></line>
+                      <line x1="21" y1="12" x2="23" y2="12"></line>
+                      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg></span>
+                  <span class="plant-metric-title">Light</span>
+                  <span class="plant-metric-value">Direct Sun</span>
+                </div>
+                <div class="plant-metric-box">
+                  <span class="plant-metric-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                    </svg></span>
+                  <span class="plant-metric-title">Water</span>
+                  <span class="plant-metric-value">Moderate Drip</span>
+                </div>
+                <div class="plant-metric-box">
+                  <span class="plant-metric-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+                      <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+                    </svg></span>
+                  <span class="plant-metric-title">Care</span>
+                  <span class="plant-metric-value">Seasonal Cut</span>
+                </div>
+              </div>
+
+              <div class="plant-card-footer">
+                <a href="#plantSelectorCtaSection" class="plant-inquire-btn">
+                  <span>Inquire for Rooftop Spec</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Plant 3: Feather Reed Grass -->
+          <article class="plant-species-card">
+            <div class="plant-species-media">
+              <img src="assets/images/plants/plant-sun-grasses.jpg" alt="Golden Feather Reed Grass" loading="lazy">
+              <span class="plant-badge-category">Architectural Grass</span>
+              <span class="plant-badge-wind">Wind Buffer</span>
+            </div>
+            <div class="plant-species-body">
+              <span class="plant-botanical-name">Calamagrostis Acutiflora</span>
+              <h3 class="plant-common-name serif">Karl Foerster Feather Grass</h3>
+              <p class="plant-desc-fixed">
+                Upright golden architectural plumes create soothing acoustic rustling in rooftop winds while requiring
+                zero staking and minimal seasonal.
+              </p>
+
+              <div class="plant-badges-row">
+                <div class="plant-metric-box">
+                  <span class="plant-metric-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="5"></circle>
+                      <line x1="12" y1="1" x2="12" y2="3"></line>
+                      <line x1="12" y1="21" x2="12" y2="23"></line>
+                      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                      <line x1="1" y1="12" x2="3" y2="12"></line>
+                      <line x1="21" y1="12" x2="23" y2="12"></line>
+                      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg></span>
+                  <span class="plant-metric-title">Light</span>
+                  <span class="plant-metric-value">Full / Partial</span>
+                </div>
+                <div class="plant-metric-box">
+                  <span class="plant-metric-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                    </svg></span>
+                  <span class="plant-metric-title">Water</span>
+                  <span class="plant-metric-value">Low-Medium</span>
+                </div>
+                <div class="plant-metric-box">
+                  <span class="plant-metric-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+                      <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+                    </svg></span>
+                  <span class="plant-metric-title">Care</span>
+                  <span class="plant-metric-value">Annual Trim</span>
+                </div>
+              </div>
+
+              <div class="plant-card-footer">
+                <a href="#plantSelectorCtaSection" class="plant-inquire-btn">
+                  <span>Inquire for Rooftop Spec</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3: SHADE-FRIENDLY PLANTS
+         ========================================================================== -->
+    <section class="plant-section" id="plantShadeFriendlySection">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="eyebrow">SHELTERED &amp; NORTH FACING</span>
+          <h2 class="section-title serif">Shade-Friendly Terrace Plants</h2>
+          <p class="section-subtitle">
+            Deep-green architectural foliage, delicate textures, and evergreen climbers tailored for shadowed
+            courtyards, overhangs, and living walls.
+          </p>
+        </div>
+
+        <div class="plant-species-grid">
+
+          <!-- Plant 4: Japanese Painted Fern & Hostas -->
+          <article class="plant-species-card">
+            <div class="plant-species-media">
+              <img src="assets/images/plants/plant-shade-ferns.jpg" alt="Japanese Painted Ferns and Hostas"
+                loading="lazy">
+              <span class="plant-badge-category">Shade Perennial</span>
+              <span class="plant-badge-wind">Sheltered</span>
+            </div>
+            <div class="plant-species-body">
+              <span class="plant-botanical-name">Athyrium Niponicum</span>
+              <h3 class="plant-common-name serif">Japanese Painted Fern &amp; Hosta</h3>
+              <p class="plant-desc-fixed">
+                Silvery-burgundy fronds and broad variegated hosta leaves that illuminate shaded terrace nooks with lush
+                multi-layered woodland depth.
+              </p>
+
+              <div class="plant-badges-row">
+                <div class="plant-metric-box">
+                  <span class="plant-metric-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 2v2"></path>
+                      <path d="m4.93 4.93 1.41 1.41"></path>
+                      <path d="M20 12h2"></path>
+                      <path d="m19.07 4.93-1.41 1.41"></path>
+                      <path d="M15.947 12.65a4 4 0 0 0-5.925-4.128"></path>
+                      <path d="M13 22H7a5 5 0 1 1 4.9-6H13a3 3 0 0 1 0 6Z"></path>
+                    </svg></span>
+                  <span class="plant-metric-title">Light</span>
+                  <span class="plant-metric-value">Partial/Shade</span>
+                </div>
+                <div class="plant-metric-box">
+                  <span class="plant-metric-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                    </svg></span>
+                  <span class="plant-metric-title">Water</span>
+                  <span class="plant-metric-value">Consistent Drip</span>
+                </div>
+                <div class="plant-metric-box">
+                  <span class="plant-metric-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+                      <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+                    </svg></span>
+                  <span class="plant-metric-title">Care</span>
+                  <span class="plant-metric-value">Moderate</span>
+                </div>
+              </div>
+
+              <div class="plant-card-footer">
+                <a href="#plantSelectorCtaSection" class="plant-inquire-btn">
+                  <span>Inquire for Rooftop Spec</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Plant 5: Star Jasmine & English Ivy -->
+          <article class="plant-species-card">
+            <div class="plant-species-media">
+              <img src="assets/images/plants/plant-shade-ivy.jpg" alt="Star Jasmine and English Ivy" loading="lazy">
+              <span class="plant-badge-category">Evergreen Climber</span>
+              <span class="plant-badge-wind">Privacy Wall</span>
+            </div>
+            <div class="plant-species-body">
+              <span class="plant-botanical-name">Trachelospermum Jasminoides</span>
+              <h3 class="plant-common-name serif">Evergreen Star Jasmine Trellis</h3>
+              <p class="plant-desc-fixed">
+                Dense glossy green leaves and intoxicating sweet white star-shaped summer flowers providing instant
+                privacy screening along shaded terrace.
+              </p>
+
+              <div class="plant-badges-row">
+                <div class="plant-metric-box">
+                  <span class="plant-metric-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 2v2"></path>
+                      <path d="m4.93 4.93 1.41 1.41"></path>
+                      <path d="M20 12h2"></path>
+                      <path d="m19.07 4.93-1.41 1.41"></path>
+                      <path d="M15.947 12.65a4 4 0 0 0-5.925-4.128"></path>
+                      <path d="M13 22H7a5 5 0 1 1 4.9-6H13a3 3 0 0 1 0 6Z"></path>
+                    </svg></span>
+                  <span class="plant-metric-title">Light</span>
+                  <span class="plant-metric-value">Dappled / Sun</span>
+                </div>
+                <div class="plant-metric-box">
+                  <span class="plant-metric-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                    </svg></span>
+                  <span class="plant-metric-title">Water</span>
+                  <span class="plant-metric-value">Regular Drip</span>
+                </div>
+                <div class="plant-metric-box">
+                  <span class="plant-metric-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+                      <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+                    </svg></span>
+                  <span class="plant-metric-title">Care</span>
+                  <span class="plant-metric-value">Light Training</span>
+                </div>
+              </div>
+
+              <div class="plant-card-footer">
+                <a href="#plantSelectorCtaSection" class="plant-inquire-btn">
+                  <span>Inquire for Rooftop Spec</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Plant 6: Calathea & Peace Lily -->
+          <article class="plant-species-card">
+            <div class="plant-species-media">
+              <img src="assets/images/plants/plant-shade-calathea.jpg" alt="Calathea and Peace Lily Matrix"
+                loading="lazy">
+              <span class="plant-badge-category">Living Wall Matrix</span>
+              <span class="plant-badge-wind">Air Purifier</span>
+            </div>
+            <div class="plant-species-body">
+              <span class="plant-botanical-name">Calathea Zebrina &amp; Spathiphyllum</span>
+              <h3 class="plant-common-name serif">Calathea &amp; Peace Lily Matrix</h3>
+              <p class="plant-desc-fixed">
+                Striking patterned zebra foliage and elegant pure white spathes engineered specifically for shaded
+                vertical green walls and covered luxury balconies.
+              </p>
+
+              <div class="plant-badges-row">
+                <div class="plant-metric-box">
+                  <span class="plant-metric-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 2v2"></path>
+                      <path d="m4.93 4.93 1.41 1.41"></path>
+                      <path d="M20 12h2"></path>
+                      <path d="m19.07 4.93-1.41 1.41"></path>
+                      <path d="M15.947 12.65a4 4 0 0 0-5.925-4.128"></path>
+                      <path d="M13 22H7a5 5 0 1 1 4.9-6H13a3 3 0 0 1 0 6Z"></path>
+                    </svg></span>
+                  <span class="plant-metric-title">Light</span>
+                  <span class="plant-metric-value">Indirect / Shade</span>
+                </div>
+                <div class="plant-metric-box">
+                  <span class="plant-metric-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                    </svg></span>
+                  <span class="plant-metric-title">Water</span>
+                  <span class="plant-metric-value">High / Misting</span>
+                </div>
+                <div class="plant-metric-box">
+                  <span class="plant-metric-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+                      <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+                    </svg></span>
+                  <span class="plant-metric-title">Care</span>
+                  <span class="plant-metric-value">Low-Moderate</span>
+                </div>
+              </div>
+
+              <div class="plant-card-footer">
+                <a href="#plantSelectorCtaSection" class="plant-inquire-btn">
+                  <span>Inquire for Rooftop Spec</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 4: LOW-MAINTENANCE + TROPICAL PLANTS
+         ========================================================================== -->
+    <section class="plant-section" id="plantLowMaintenanceSection">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="eyebrow">EFFORTLESS RESILIENCE &bull; EXOTIC LUXURY</span>
+          <h2 class="section-title serif">Low-Maintenance &amp; Tropical Plants</h2>
+          <p class="section-subtitle">
+            Drought-tolerant architectural succulents and cold-hardy exotic palms designed for busy homeowners and
+            breathtaking resort-style ambiance.
+          </p>
+        </div>
+
+        <div class="plant-species-grid">
+
+          <!-- Plant 7: Blue Agave & Succulent Matrix -->
+          <article class="plant-species-card">
+            <div class="plant-species-media">
+              <img src="assets/images/plants/plant-low-agave.jpg" alt="Blue Agave and Architectural Succulents"
+                loading="lazy">
+              <span class="plant-badge-category">Drought Specialist</span>
+              <span class="plant-badge-wind">Zero Maintenance</span>
+            </div>
+            <div class="plant-species-body">
+              <span class="plant-botanical-name">Agave Americana &amp; Sedum</span>
+              <h3 class="plant-common-name serif">Blue Agave &amp; Succulent Matrix</h3>
+              <p class="plant-desc-fixed">
+                Striking geometric architectural rosettes that store water internally, requiring virtually zero
+                supplemental hydration once established in stone.
+              </p>
+
+              <div class="plant-badges-row">
+                <div class="plant-metric-box">
+                  <span class="plant-metric-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="5"></circle>
+                      <line x1="12" y1="1" x2="12" y2="3"></line>
+                      <line x1="12" y1="21" x2="12" y2="23"></line>
+                      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                      <line x1="1" y1="12" x2="3" y2="12"></line>
+                      <line x1="21" y1="12" x2="23" y2="12"></line>
+                      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg></span>
+                  <span class="plant-metric-title">Light</span>
+                  <span class="plant-metric-value">Direct Sun</span>
+                </div>
+                <div class="plant-metric-box">
+                  <span class="plant-metric-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                    </svg></span>
+                  <span class="plant-metric-title">Water</span>
+                  <span class="plant-metric-value">Ultra Low</span>
+                </div>
+                <div class="plant-metric-box">
+                  <span class="plant-metric-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+                      <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+                    </svg></span>
+                  <span class="plant-metric-title">Care</span>
+                  <span class="plant-metric-value">Minimal</span>
+                </div>
+              </div>
+
+              <div class="plant-card-footer">
+                <a href="#plantSelectorCtaSection" class="plant-inquire-btn">
+                  <span>Inquire for Rooftop Spec</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Plant 8: Wind-Resistant Snake Plant Array -->
+          <article class="plant-species-card">
+            <div class="plant-species-media">
+              <img src="assets/images/plants/plant-low-sansevieria.jpg" alt="Wind-Resistant Snake Plant Array"
+                loading="lazy">
+              <span class="plant-badge-category">Architectural Vertical</span>
+              <span class="plant-badge-wind">Wind Indestructible</span>
+            </div>
+            <div class="plant-species-body">
+              <span class="plant-botanical-name">Dracaena Trifasciata (Sansevieria)</span>
+              <h3 class="plant-common-name serif">Architectural Snake Plant Array</h3>
+              <p class="plant-desc-fixed">
+                Rigid sword-like vertical bands that withstand turbulent urban winds and neglect, providing clean
+                modernist lines in contemporary zinc containers.
+              </p>
+
+              <div class="plant-badges-row">
+                <div class="plant-metric-box">
+                  <span class="plant-metric-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="5"></circle>
+                      <line x1="12" y1="1" x2="12" y2="3"></line>
+                      <line x1="12" y1="21" x2="12" y2="23"></line>
+                      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                      <line x1="1" y1="12" x2="3" y2="12"></line>
+                      <line x1="21" y1="12" x2="23" y2="12"></line>
+                      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg></span>
+                  <span class="plant-metric-title">Light</span>
+                  <span class="plant-metric-value">Any Exposure</span>
+                </div>
+                <div class="plant-metric-box">
+                  <span class="plant-metric-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                    </svg></span>
+                  <span class="plant-metric-title">Water</span>
+                  <span class="plant-metric-value">Very Low</span>
+                </div>
+                <div class="plant-metric-box">
+                  <span class="plant-metric-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+                      <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+                    </svg></span>
+                  <span class="plant-metric-title">Care</span>
+                  <span class="plant-metric-value">Indestructible</span>
+                </div>
+              </div>
+
+              <div class="plant-card-footer">
+                <a href="#plantSelectorCtaSection" class="plant-inquire-btn">
+                  <span>Inquire for Rooftop Spec</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Plant 9: Exotic Bird of Paradise & Palm -->
+          <article class="plant-species-card">
+            <div class="plant-species-media">
+              <img src="assets/images/plants/plant-trop-palm.jpg" alt="Bird of Paradise and Windmill Palm"
+                loading="lazy">
+              <span class="plant-badge-category">Tropical Statement</span>
+              <span class="plant-badge-wind">Resort Aesthetic</span>
+            </div>
+            <div class="plant-species-body">
+              <span class="plant-botanical-name">Strelitzia Nicolai &amp; Trachycarpus</span>
+              <h3 class="plant-common-name serif">Bird of Paradise &amp; Windmill Palm</h3>
+              <p class="plant-desc-fixed">
+                Large dramatic paddle leaves and cold-hardy fan palms create a lush tropical private penthouse retreat
+                with stunning architectural silhouette.
+              </p>
+
+              <div class="plant-badges-row">
+                <div class="plant-metric-box">
+                  <span class="plant-metric-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="5"></circle>
+                      <line x1="12" y1="1" x2="12" y2="3"></line>
+                      <line x1="12" y1="21" x2="12" y2="23"></line>
+                      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                      <line x1="1" y1="12" x2="3" y2="12"></line>
+                      <line x1="21" y1="12" x2="23" y2="12"></line>
+                      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg></span>
+                  <span class="plant-metric-title">Light</span>
+                  <span class="plant-metric-value">Bright / Sun</span>
+                </div>
+                <div class="plant-metric-box">
+                  <span class="plant-metric-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                    </svg></span>
+                  <span class="plant-metric-title">Water</span>
+                  <span class="plant-metric-value">Moderate-High</span>
+                </div>
+                <div class="plant-metric-box">
+                  <span class="plant-metric-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+                      <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+                    </svg></span>
+                  <span class="plant-metric-title">Care</span>
+                  <span class="plant-metric-value">Moderate</span>
+                </div>
+              </div>
+
+              <div class="plant-card-footer">
+                <a href="#plantSelectorCtaSection" class="plant-inquire-btn">
+                  <span>Inquire for Rooftop Spec</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 5: CHOOSE THE RIGHT PLANTS FOR YOUR TERRACE CTA
+         ========================================================================== -->
+    <section class="plant-section" id="plantSelectorCtaSection" style="background: var(--bg-surface-alt);">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="eyebrow">MICROCLIMATE RECOMMENDATION</span>
+          <h2 class="section-title serif">Choose the Right Plants for Your Terrace</h2>
+          <p class="section-subtitle">
+            Get a tailored botanical palette curated specifically for your building's wind speed, solar angle, and
+            structural weight allowance.
+          </p>
+        </div>
+
+        <div class="plant-selector-cta-grid">
+
+          <!-- Interactive Plant Palette Quiz / Recommendation Form -->
+          <div class="plant-quiz-card">
+            <h3 class="serif plant-quiz-title">
+              Instant Terrace Flora Audit
+            </h3>
+            <p class="plant-quiz-lead">
+              Select your rooftop specifications to receive an engineered plant list with recommended irrigation drip
+              settings.
+            </p>
+
+            <form id="plantAuditForm"
+              onsubmit="event.preventDefault(); alert('Botanical Palette Generated! A personalized care guide and recommended container layout has been sent to your email.'); this.reset();">
+              <div class="h2-form-group">
+                <label class="h2-form-label" for="plantSunExposure">Rooftop Sun Exposure</label>
+                <select id="plantSunExposure" class="h2-form-select" required>
+                  <option value="" disabled selected>Select sunlight condition</option>
+                  <option value="full-sun">Blazing Full Sun (&gt; 6 hrs/day)</option>
+                  <option value="partial-sun">Partial Sun / Morning Light (3-6 hrs/day)</option>
+                  <option value="shaded">Sheltered / High-Rise Shade (&lt; 3 hrs/day)</option>
+                </select>
+              </div>
+
+              <div class="h2-form-group">
+                <label class="h2-form-label" for="plantWindLevel">Wind &amp; Height Level</label>
+                <select id="plantWindLevel" class="h2-form-select" required>
+                  <option value="" disabled selected>Select elevation &amp; wind</option>
+                  <option value="high-wind">High-Rise Penthouse (High Wind 15+ Floors)</option>
+                  <option value="moderate-wind">Mid-Rise Terrace (Moderate Wind 4-15 Floors)</option>
+                  <option value="sheltered-wind">Courtyard / Ground-4th Floor (Sheltered)</option>
+                </select>
+              </div>
+
+              <div class="h2-form-group">
+                <label class="h2-form-label" for="plantUserEmail">Your Email for Curated Palette</label>
+                <input type="email" id="plantUserEmail" class="h2-form-input" placeholder="name@example.com" required>
+              </div>
+
+              <button type="submit" class="btn btn-primary"
+                style="width: 100%; justify-content: center; margin-top: 0.75rem;">
+                <span>Generate Custom Plant Palette &rarr;</span>
+              </button>
+            </form>
+          </div>
+
+          <!-- Botanist Expert Consultation Spotlight Card -->
+          <div class="plant-botanist-showcase">
+            <span class="eyebrow"
+              style="background: rgba(255,255,255,0.15); color: var(--warm-gold); align-self: flex-start;">LEAD
+              HORTICULTURIST</span>
+            <h3 class="serif" style="color: #FFFFFF; font-size: clamp(1.5rem, 2.2vw, 1.95rem); margin: 0.75rem 0 1rem;">
+              Custom Botanical Curation by Certified Master Botanists
+            </h3>
+            <p style="color: rgba(255,255,255,0.85); font-size: 0.92rem; line-height: 1.6; margin-bottom: 1.25rem;">
+              We hand-select mature specimen trees, nursery-hardened perennials, and drought-resistant living wall
+              matrices grown specifically for rooftop stress resilience.
+            </p>
+
+            <ul
+              style="color: rgba(255,255,255,0.9); font-size: 0.86rem; display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 1.5rem;">
+              <li style="display: flex; align-items: center; gap: 0.6rem;"><span
+                  style="color: var(--warm-gold); font-weight: 800;">✓</span> 100% Acclimatized to rooftop wind shear
+              </li>
+              <li style="display: flex; align-items: center; gap: 0.6rem;"><span
+                  style="color: var(--warm-gold); font-weight: 800;">✓</span> Lightweight pumice root soil matrices</li>
+              <li style="display: flex; align-items: center; gap: 0.6rem;"><span
+                  style="color: var(--warm-gold); font-weight: 800;">✓</span> 2-Year Plant Health Guarantee with care
+                plan</li>
+            </ul>
+
+            <div class="plant-botanist-avatar-row">
+              <div class="plant-botanist-img">
+                <img src="assets/images/plants/plant-cta-botanist.jpg" alt="Senior Landscape Botanist">
+              </div>
+              <div>
+                <div style="font-weight: 700; font-size: 1rem; color: #FFFFFF;">Dr. Clara Thorne</div>
+                <div style="font-size: 0.78rem; color: var(--warm-gold);">Head of Botanical Architecture, TerraVerde
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       SITE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer" id="siteFooter">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <!-- Column 1: Brand Info & Socials -->
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="TerraVerdé Home">
+            <img src="assets/images/logo-transparent.png" alt="TerraVerdé - Rooftop &amp; Terrace"
+              class="brand-logo-img logo-light" width="165" height="48">
+            <img src="assets/images/logo-dark.png" alt="TerraVerdé - Rooftop &amp; Terrace"
+              class="brand-logo-img logo-dark" width="165" height="48">
+          </a>
+          <p class="footer-desc">
+            Pioneering luxury rooftop architecture, sustainable botanical sanctuaries, and custom urban terraces
+            designed for elevated outdoor living.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="Pinterest">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M8 20l4-9-1.5-3.5 3 1.5 2 5-3 6"></path>
+              </svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation -->
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home 1 (Signature)</a></li>
+            <li><a href="home-2.html" class="footer-link">Home 2 (Editorial)</a></li>
+            <li><a href="services.html" class="footer-link">Services Overview</a></li>
+            <li><a href="projects-gallery.html" class="footer-link">Projects Gallery</a></li>
+            <li><a href="plant-selection.html" class="footer-link">Plant Selection</a></li>
+            <li><a href="maintenance-plans.html" class="footer-link">Maintenance Plans</a></li>
+            <li><a href="about.html" class="footer-link">About TerraVerdé</a></li>
+            <li><a href="contact.html" class="footer-link">Contact &amp; Site Visit</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Specialties -->
+        <div>
+          <h4 class="footer-heading">Specialties</h4>
+          <ul class="footer-links">
+            <li><a href="services.html" class="footer-link">Terrace Landscape Design</a></li>
+            <li><a href="services.html" class="footer-link">Rooftop Container Gardens</a></li>
+            <li><a href="services.html" class="footer-link">Vertical Green Walls</a></li>
+            <li><a href="services.html" class="footer-link">Smart Drip Irrigation</a></li>
+            <li><a href="maintenance-plans.html" class="footer-link">Seasonal Plant Care</a></li>
+            <li><a href="services.html" class="footer-link">Windbreak &amp; Pergolas</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact & Global Studios -->
+        <div class="footer-contact-col">
+          <h4 class="footer-heading">Contact &amp; Studios</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">
+              <span class="footer-contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg></span>
+              <div>
+                <strong>NY Studio:</strong> 450 Hudson St, Tribeca, NY 10014
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <span class="footer-contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                  <line x1="9" y1="22" x2="9" y2="22.01"></line>
+                  <line x1="15" y1="22" x2="15" y2="22.01"></line>
+                  <line x1="9" y1="6" x2="9" y2="6.01"></line>
+                  <line x1="15" y1="6" x2="15" y2="6.01"></line>
+                  <line x1="9" y1="10" x2="9" y2="10.01"></line>
+                  <line x1="15" y1="10" x2="15" y2="10.01"></line>
+                  <line x1="9" y1="14" x2="9" y2="14.01"></line>
+                  <line x1="15" y1="14" x2="15" y2="14.01"></line>
+                  <line x1="9" y1="18" x2="9" y2="18.01"></line>
+                  <line x1="15" y1="18" x2="15" y2="18.01"></line>
+                </svg></span>
+              <div>
+                <strong>London Atelier:</strong> 28 Berkeley Square, Mayfair, London W1J 6EN
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <span class="footer-contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg></span>
+              <div>
+                <strong>Direct Line:</strong> <a href="tel:+18004928377" class="footer-contact-link">+1 (800)
+                  492-8377</a>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <span class="footer-contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg></span>
+              <div>
+                <strong>Inquiries:</strong> <a href="mailto:concierge@terraverde-gardens.com"
+                  class="footer-contact-link">concierge@terraverde-gardens.com</a>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <span class="footer-contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg></span>
+              <div>
+                <strong>Hours:</strong> Mon &ndash; Sat: 8:00 AM &ndash; 7:00 PM EST
+              </div>
+            </div>
+          </div>
+          <div style="margin-top: 1.25rem;">
+            <a href="contact.html" class="btn btn-accent btn-sm" style="width: 100%; justify-content: center;">Book Free
+              Site Visit &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 TerraVerd&eacute; Rooftop &amp; Terrace Garden Design. All rights reserved.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="contact.html" class="footer-bottom-link">Site Consultation</a>
+          <span style="opacity: 0.3;">&bull;</span>
+          <a href="about.html" class="footer-bottom-link">Privacy Policy</a>
+          <span style="opacity: 0.3;">&bull;</span>
+          <a href="about.html" class="footer-bottom-link">Terms of Service</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       LOGIN MODAL
+       ========================================================================== -->
+  <div class="login-modal" id="loginModal">
+    <div class="login-modal-box">
+      <div class="login-modal-header">
+        <h3 class="serif">Client Portal Login</h3>
+        <button type="button" class="login-modal-close" id="loginModalClose"
+          aria-label="Close login modal">&times;</button>
+      </div>
+      <p class="login-modal-desc">
+        Access your real-time terrace irrigation telemetry, 3D architectural plans, and seasonal maintenance schedule.
+      </p>
+      <form class="login-modal-form" id="loginModalForm"
+        onsubmit="event.preventDefault(); alert('Authentication successful. Redirecting to client portal dashboard...'); document.getElementById('loginModal').classList.remove('active');">
+        <div class="form-group">
+          <label class="form-label" for="loginEmail">Email Address</label>
+          <input type="email" id="loginEmail" class="form-input" placeholder="name@example.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" class="form-input"
+            placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" required>
+        </div>
+        <div
+          style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; font-size: 0.85rem;">
+          <label style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer;">
+            <input type="checkbox"> Remember me
+          </label>
+          <a href="#forgot" style="color: var(--forest); font-weight: 600;">Forgot Password?</a>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Sign In to Client
+          Portal</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Floating Circular Glowing Back to Top Button -->
+  <button type="button" class="floating-back-to-top" id="backToTopBtn" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

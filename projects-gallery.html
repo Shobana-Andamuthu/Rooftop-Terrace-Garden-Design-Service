@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects Gallery — Curated Rooftop &amp; Terrace Portfolio | TerraVerde</title>
+  <meta name="description"
+    content="Explore TerraVerde's architectural rooftop and terrace garden portfolio: luxury penthouses, custom residential terraces, living green wall facades, and before/after transformations.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <!-- Google Fonts Preconnect & Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+  <!-- ==========================================================================
+       SITE HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <nav class="navbar">
+
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-logo" id="brandLogo" aria-label="TerraVerdé Home">
+          <img src="assets/images/logo-transparent.png" alt="TerraVerdé - Rooftop &amp; Terrace"
+            class="brand-logo-img logo-light" width="165" height="48">
+          <img src="assets/images/logo-dark.png" alt="TerraVerdé - Rooftop &amp; Terrace"
+            class="brand-logo-img logo-dark" width="165" height="48">
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-desktop">
+          <li class="nav-item-dropdown">
+            <a href="index.html" class="nav-link dropdown-toggle-btn" id="homeDropdownBtn" aria-haspopup="true">
+              <span>Home</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <div class="dropdown-menu" aria-label="Home Submenu">
+              <a href="index.html" class="dropdown-item">Home 1 (Signature)</a>
+              <a href="home-2.html" class="dropdown-item">Home 2 (Editorial)</a>
+            </div>
+          </li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="projects-gallery.html" class="nav-link active">Projects Gallery</a></li>
+          <li><a href="plant-selection.html" class="nav-link">Plant Selection</a></li>
+          <li><a href="maintenance-plans.html" class="nav-link">Maintenance Plans</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Right Side Controls & CTA & Login -->
+        <div class="nav-controls">
+          <button type="button" class="control-btn theme-toggle-btn" aria-label="Toggle dark/light theme"
+            id="themeToggleBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          </button>
+
+          <button type="button" class="control-btn rtl-toggle-btn" aria-label="Toggle text direction" id="rtlToggleBtn">
+            RTL
+          </button>
+
+          <!-- Login Button in Navbar -->
+          <a href="login.html" class="btn-login" id="navLoginBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+            <span>Login</span>
+          </a>
+
+          <!-- Hamburger Button (Tablet & Mobile) -->
+          <button type="button" class="hamburger-btn" aria-label="Open mobile menu" id="hamburgerBtn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer Overlay -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay">
+    <div class="mobile-nav-drawer" id="mobileNavDrawer">
+
+      <div class="mobile-drawer-header">
+        <a href="index.html" class="brand-logo" aria-label="TerraVerdé Home">
+          <img src="assets/images/logo-transparent.png" alt="TerraVerdé - Rooftop &amp; Terrace"
+            class="brand-logo-img logo-light" width="145" height="42">
+          <img src="assets/images/logo-dark.png" alt="TerraVerdé - Rooftop &amp; Terrace"
+            class="brand-logo-img logo-dark" width="145" height="42">
+        </a>
+        <button type="button" class="btn-icon close-drawer-btn" aria-label="Close mobile menu" id="closeDrawerBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="mobile-nav-links">
+        <div class="mobile-dropdown-item">
+          <a href="#" class="mobile-nav-link mobile-dropdown-toggle">
+            <span>Home Variations</span>
+            <svg class="dropdown-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+          <div class="mobile-sub-menu">
+            <a href="index.html" class="mobile-sub-link">Home 1 (Signature)</a>
+            <a href="home-2.html" class="mobile-sub-link">Home 2 (Editorial)</a>
+          </div>
+        </div>
+        <a href="services.html" class="mobile-nav-link">Services</a>
+        <a href="projects-gallery.html" class="mobile-nav-link active">Projects Gallery</a>
+        <a href="plant-selection.html" class="mobile-nav-link">Plant Selection</a>
+        <a href="maintenance-plans.html" class="mobile-nav-link">Maintenance Plans</a>
+        <a href="about.html" class="mobile-nav-link">About</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+      </nav>
+
+      <div class="mobile-drawer-footer">
+        <div class="mobile-controls-row">
+          <button type="button" class="btn btn-secondary btn-sm theme-toggle-btn" style="flex: 1;">Toggle Theme</button>
+          <button type="button" class="btn btn-secondary btn-sm rtl-toggle-btn" style="flex: 1;">RTL</button>
+        </div>
+        <a href="login.html" class="btn btn-secondary btn-sm mobile-login-btn" style="width: 100%;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+          <span>Client Portal Login</span>
+        </a>
+        <a href="contact.html" class="btn btn-primary" style="width: 100%;">Book a Free Site Visit</a>
+      </div>
+
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         SECTION 1: PROJECTS HERO
+         ========================================================================== -->
+    <section class="gal-hero-section" id="galHeroSection">
+      <div class="container">
+
+        <div class="gal-hero-header">
+          <span class="eyebrow">ARCHITECTURAL PORTFOLIO &bull; 2024&ndash;2026</span>
+          <h1 class="gal-hero-title serif">Curated Rooftop &amp; Terrace Sanctuaries</h1>
+          <p class="gal-hero-lead">
+            Explore our award-winning architectural transformations across luxury penthouses, multi-tier residential
+            terraces, and bio-engineered hydroponic vertical walls.
+          </p>
+
+          <!-- Interactive Filter Jump Bar -->
+          <div class="gal-filter-bar" id="galleryFilterBar">
+            <a href="#galFeaturedRooftopSection" class="gal-filter-btn active">All Projects</a>
+            <a href="#galFeaturedRooftopSection" class="gal-filter-btn">Featured Penthouses</a>
+            <a href="#galResidentialTerraceSection" class="gal-filter-btn">Residential Terraces</a>
+            <a href="#galVerticalGardenSection" class="gal-filter-btn">Vertical Living Walls</a>
+            <a href="#galBeforeAfterCtaSection" class="gal-filter-btn">Before &amp; After Case Studies</a>
+          </div>
+        </div>
+
+        <!-- Hero Panoramic Banner -->
+        <div class="srv-hero-media-banner">
+          <img src="assets/images/projects/gallery-hero.jpg" alt="Panoramic Luxury Rooftop Garden" loading="eager">
+          <div class="srv-hero-floating-badge">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--warm-gold)" stroke-width="2.2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            <div>
+              <div style="font-weight: 700; font-size: 0.92rem; color: #FFFFFF;">350+ Projects Commissioned</div>
+              <div style="font-size: 0.75rem; color: rgba(255,255,255,0.75);">Structural load certification &amp;
+                climate-smart engineering</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 2: FEATURED ROOFTOP PROJECTS
+         ========================================================================== -->
+    <section class="gal-section" id="galFeaturedRooftopSection">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="eyebrow">SIGNATURE PENTHOUSES</span>
+          <h2 class="section-title serif">Featured Rooftop Sanctuaries</h2>
+          <p class="section-subtitle">
+            High-altitude luxury terrace architecture engineered for structural wind resistance, panoramic entertaining,
+            and microclimate resilience.
+          </p>
+        </div>
+
+        <div class="gal-projects-grid">
+
+          <!-- Card 1: Skyline Penthouse Sanctuary -->
+          <article class="gal-card" data-project="skyline">
+            <div class="gal-card-media">
+              <img src="assets/images/projects/project-gal-skyline-penthouse.jpg" alt="Skyline Penthouse Sanctuary"
+                loading="lazy">
+              <div class="gal-card-overlay"></div>
+              <span class="gal-badge-type">Penthouse Rooftop</span>
+              <div class="gal-badge-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Tribeca Skyline Tower, NY</span>
+              </div>
+            </div>
+            <div class="gal-card-content">
+              <h3 class="gal-project-title serif">Skyline Penthouse Sanctuary</h3>
+              <p class="gal-project-desc">
+                An ultra-luxury 48th-floor rooftop oasis with custom Indonesian teak floating decking, structural
+                windbreak glass pergolas, and sculpted century olive trees.
+              </p>
+              <div class="gal-specs-row">
+                <div class="gal-spec-item">
+                  <span class="gal-spec-label">Total Footprint</span>
+                  <span class="gal-spec-val">2,450 sq ft</span>
+                </div>
+                <div class="gal-spec-item">
+                  <span class="gal-spec-label">Sun Exposure</span>
+                  <span class="gal-spec-val">Full South-West</span>
+                </div>
+                <div class="gal-spec-item">
+                  <span class="gal-spec-label">Irrigation</span>
+                  <span class="gal-spec-val">Solar Smart Drip</span>
+                </div>
+                <div class="gal-spec-item">
+                  <span class="gal-spec-label">Completion</span>
+                  <span class="gal-spec-val">Spring 2025</span>
+                </div>
+              </div>
+              <div class="gal-card-footer">
+                <button type="button" class="gal-view-btn" data-modal-title="Skyline Penthouse Sanctuary"
+                  data-modal-tag="Penthouse Rooftop • Tribeca NY"
+                  data-modal-img="assets/images/projects/project-gal-skyline-penthouse.jpg"
+                  data-modal-desc="Engineered specifically for high-wind velocity loads at 48 stories, this project incorporates custom titanium root anchors, lightweight volcanic pumice soil blends, and automated microclimate misting for hot summer afternoons."
+                  data-modal-area="2,450 sq ft"
+                  data-modal-plants="Centenarian Olive Trees, Blue Fescue, Lavender, Japanese Maple"
+                  data-modal-irrig="Dual-Zone Solar Smart Drip + Micro-Mist"
+                  data-modal-timeline="7 Weeks Commissioning">
+                  <span>View Project Specs</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Bioclimatic Canopy Oasis -->
+          <article class="gal-card" data-project="canopy">
+            <div class="gal-card-media">
+              <img src="assets/images/projects/project-gal-canopy-oasis.jpg" alt="Bioclimatic Canopy Oasis"
+                loading="lazy">
+              <div class="gal-card-overlay"></div>
+              <span class="gal-badge-type">Bioclimatic Pergola</span>
+              <div class="gal-badge-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Knightsbridge Terrace, London</span>
+              </div>
+            </div>
+            <div class="gal-card-content">
+              <h3 class="gal-project-title serif">Bioclimatic Canopy Oasis</h3>
+              <p class="gal-project-desc">
+                Automated motorized louvers integrate with bespoke Corten steel planters and an architectural outdoor
+                kitchen for year-round rooftop entertaining.
+              </p>
+              <div class="gal-specs-row">
+                <div class="gal-spec-item">
+                  <span class="gal-spec-label">Total Footprint</span>
+                  <span class="gal-spec-val">1,850 sq ft</span>
+                </div>
+                <div class="gal-spec-item">
+                  <span class="gal-spec-label">Pergola System</span>
+                  <span class="gal-spec-val">Motorized Louvers</span>
+                </div>
+                <div class="gal-spec-item">
+                  <span class="gal-spec-label">Heating</span>
+                  <span class="gal-spec-val">Infrared In-Beam</span>
+                </div>
+                <div class="gal-spec-item">
+                  <span class="gal-spec-label">Completion</span>
+                  <span class="gal-spec-val">Summer 2025</span>
+                </div>
+              </div>
+              <div class="gal-card-footer">
+                <button type="button" class="gal-view-btn" data-modal-title="Bioclimatic Canopy Oasis"
+                  data-modal-tag="Bioclimatic Pergola • Knightsbridge London"
+                  data-modal-img="assets/images/projects/project-gal-canopy-oasis.jpg"
+                  data-modal-desc="Designed for seamless transition between wet British winters and sunny summer days, featuring sensor-activated rain slats, integrated perimeter drainage channels, and fragrant evergreen jasmine trellises."
+                  data-modal-area="1,850 sq ft"
+                  data-modal-plants="Star Jasmine, Hornbeam Espaliers, Dwarf Meyer Lemon, Hydrangea"
+                  data-modal-irrig="Sub-Surface Capillary Drip Feed" data-modal-timeline="5 Weeks Commissioning">
+                  <span>View Project Specs</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Minimalist Zen Rooftop -->
+          <article class="gal-card" data-project="zen">
+            <div class="gal-card-media">
+              <img src="assets/images/projects/project-gal-zen-rooftop.jpg" alt="Minimalist Zen Rooftop" loading="lazy">
+              <div class="gal-card-overlay"></div>
+              <span class="gal-badge-type">Japanese Zen Design</span>
+              <div class="gal-badge-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Shibuya Sky Residences, Tokyo</span>
+              </div>
+            </div>
+            <div class="gal-card-content">
+              <h3 class="gal-project-title serif">Minimalist Zen Rooftop</h3>
+              <p class="gal-project-desc">
+                Granite water features, raked white gravel stone beds, dwarf black pine bonsai, and acoustic timber
+                slatted screens provide complete meditative serenity.
+              </p>
+              <div class="gal-specs-row">
+                <div class="gal-spec-item">
+                  <span class="gal-spec-label">Total Footprint</span>
+                  <span class="gal-spec-val">1,200 sq ft</span>
+                </div>
+                <div class="gal-spec-item">
+                  <span class="gal-spec-label">Water Feature</span>
+                  <span class="gal-spec-val">Recirculating Basin</span>
+                </div>
+                <div class="gal-spec-item">
+                  <span class="gal-spec-label">Plant Style</span>
+                  <span class="gal-spec-val">Cloud-Pruned Bonsai</span>
+                </div>
+                <div class="gal-spec-item">
+                  <span class="gal-spec-label">Completion</span>
+                  <span class="gal-spec-val">Autumn 2025</span>
+                </div>
+              </div>
+              <div class="gal-card-footer">
+                <button type="button" class="gal-view-btn" data-modal-title="Minimalist Zen Rooftop"
+                  data-modal-tag="Japanese Zen Design • Shibuya Tokyo"
+                  data-modal-img="assets/images/projects/project-gal-zen-rooftop.jpg"
+                  data-modal-desc="A tranquil Japanese-inspired contemplative garden balancing natural Kuroki basalt boulders with precision raked Shirakawa gravel, sheltered by acoustic cedar louver screens."
+                  data-modal-area="1,200 sq ft"
+                  data-modal-plants="Pinus Thunbergii Bonsai, Bamboo Phyllostachys, Japanese Fern, Moss"
+                  data-modal-irrig="Ultra-Low Flow Micro Drip System" data-modal-timeline="4 Weeks Commissioning">
+                  <span>View Project Specs</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3: RESIDENTIAL TERRACE GARDENS
+         ========================================================================== -->
+    <section class="gal-section" id="galResidentialTerraceSection">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="eyebrow">URBAN RESIDENTIAL HAVENS</span>
+          <h2 class="section-title serif">Residential Terrace Gardens</h2>
+          <p class="section-subtitle">
+            Custom modular container curation, privacy evergreen hedging, and lush botanical arrangements crafted for
+            modern city apartments and duplexes.
+          </p>
+        </div>
+
+        <div class="gal-projects-grid">
+
+          <!-- Card 4: Mediterranean Courtyard Terrace -->
+          <article class="gal-card" data-project="mediterranean">
+            <div class="gal-card-media">
+              <img src="assets/images/projects/project-gal-terrace-courtyard.jpg" alt="Mediterranean Courtyard Terrace"
+                loading="lazy">
+              <div class="gal-card-overlay"></div>
+              <span class="gal-badge-type">Mediterranean Courtyard</span>
+              <div class="gal-badge-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Eixample Terrace, Barcelona</span>
+              </div>
+            </div>
+            <div class="gal-card-content">
+              <h3 class="gal-project-title serif">Mediterranean Courtyard</h3>
+              <p class="gal-project-desc">
+                Handmade clay pots with aromatic lavender, dwarf figs, rosemary, and limestone pavers providing a warm
+                Iberian outdoor dining haven.
+              </p>
+              <div class="gal-specs-row">
+                <div class="gal-spec-item">
+                  <span class="gal-spec-label">Container Style</span>
+                  <span class="gal-spec-val">Handmade Terracotta</span>
+                </div>
+                <div class="gal-spec-item">
+                  <span class="gal-spec-label">Flora Profile</span>
+                  <span class="gal-spec-val">Aromatic Herbs</span>
+                </div>
+                <div class="gal-spec-item">
+                  <span class="gal-spec-label">Paving</span>
+                  <span class="gal-spec-val">Crema Marfil Stone</span>
+                </div>
+                <div class="gal-spec-item">
+                  <span class="gal-spec-label">Completion</span>
+                  <span class="gal-spec-val">Winter 2024</span>
+                </div>
+              </div>
+              <div class="gal-card-footer">
+                <button type="button" class="gal-view-btn" data-modal-title="Mediterranean Courtyard Terrace"
+                  data-modal-tag="Mediterranean Courtyard • Eixample Barcelona"
+                  data-modal-img="assets/images/projects/project-gal-terrace-courtyard.jpg"
+                  data-modal-desc="Transformed a narrow urban terrace into a sun-soaked Mediterranean paradise utilizing high-drainage breathable clay pots, drought-tolerant flora, and custom brass low-voltage uplighting."
+                  data-modal-area="950 sq ft"
+                  data-modal-plants="Arbequina Olives, Spanish Lavender, Meyer Lemons, Rosemary"
+                  data-modal-irrig="Automated Battery Drip Controller" data-modal-timeline="3 Weeks Commissioning">
+                  <span>View Project Specs</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5: Private Botanical Balcony -->
+          <article class="gal-card" data-project="balcony">
+            <div class="gal-card-media">
+              <img src="assets/images/projects/project-gal-botanical-balcony.jpg" alt="Private Botanical Balcony"
+                loading="lazy">
+              <div class="gal-card-overlay"></div>
+              <span class="gal-badge-type">Modular Balcony Curation</span>
+              <div class="gal-badge-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Kensington Gardens, London</span>
+              </div>
+            </div>
+            <div class="gal-card-content">
+              <h3 class="gal-project-title serif">Private Botanical Balcony</h3>
+              <p class="gal-project-desc">
+                Ultra-lightweight fiberclay planters, cedar privacy trellis, and cascading evergreen climbers maximize
+                floor space on a luxury apartment.
+              </p>
+              <div class="gal-specs-row">
+                <div class="gal-spec-item">
+                  <span class="gal-spec-label">Total Footprint</span>
+                  <span class="gal-spec-val">420 sq ft</span>
+                </div>
+                <div class="gal-spec-item">
+                  <span class="gal-spec-label">Planter Weight</span>
+                  <span class="gal-spec-val">Lightweight Fiberclay</span>
+                </div>
+                <div class="gal-spec-item">
+                  <span class="gal-spec-label">Privacy Screen</span>
+                  <span class="gal-spec-val">Acoustic Cedar Slats</span>
+                </div>
+                <div class="gal-spec-item">
+                  <span class="gal-spec-label">Completion</span>
+                  <span class="gal-spec-val">Spring 2025</span>
+                </div>
+              </div>
+              <div class="gal-card-footer">
+                <button type="button" class="gal-view-btn" data-modal-title="Private Botanical Balcony"
+                  data-modal-tag="Modular Balcony • Kensington London"
+                  data-modal-img="assets/images/projects/project-gal-botanical-balcony.jpg"
+                  data-modal-desc="Designed for optimal weight distribution on cantilevered apartment balconies. Incorporates self-watering reservoirs and compact multi-tier plant arrangements for maximum privacy from neighboring towers."
+                  data-modal-area="420 sq ft"
+                  data-modal-plants="English Ivy, Boxwood Spheres, Trailing Rosemary, Calamagrostis"
+                  data-modal-irrig="Concealed Micro Tube Drip Feed" data-modal-timeline="2 Weeks Commissioning">
+                  <span>View Project Specs</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6: Contemporary Duplex Terrace -->
+          <article class="gal-card" data-project="duplex">
+            <div class="gal-card-media">
+              <img src="assets/images/projects/project-gal-contemporary-duplex.jpg" alt="Contemporary Duplex Terrace"
+                loading="lazy">
+              <div class="gal-card-overlay"></div>
+              <span class="gal-badge-type">Multi-Tier Duplex</span>
+              <div class="gal-badge-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Stockholm Waterfront Duplex</span>
+              </div>
+            </div>
+            <div class="gal-card-content">
+              <h3 class="gal-project-title serif">Contemporary Duplex Terrace</h3>
+              <p class="gal-project-desc">
+                Nordic architectural layout with weather-hardy conifers, architectural ornamental grasses, integrated
+                linear fire table, and dark granite.
+              </p>
+              <div class="gal-specs-row">
+                <div class="gal-spec-item">
+                  <span class="gal-spec-label">Total Footprint</span>
+                  <span class="gal-spec-val">1,600 sq ft</span>
+                </div>
+                <div class="gal-spec-item">
+                  <span class="gal-spec-label">Fire Feature</span>
+                  <span class="gal-spec-val">Linear Bioethanol</span>
+                </div>
+                <div class="gal-spec-item">
+                  <span class="gal-spec-label">Deck Material</span>
+                  <span class="gal-spec-val">Dark Basalt Granite</span>
+                </div>
+                <div class="gal-spec-item">
+                  <span class="gal-spec-label">Completion</span>
+                  <span class="gal-spec-val">Autumn 2024</span>
+                </div>
+              </div>
+              <div class="gal-card-footer">
+                <button type="button" class="gal-view-btn" data-modal-title="Contemporary Duplex Terrace"
+                  data-modal-tag="Multi-Tier Duplex • Stockholm Waterfront"
+                  data-modal-img="assets/images/projects/project-gal-contemporary-duplex.jpg"
+                  data-modal-desc="Engineered for severe sub-zero Nordic winters featuring freeze-thaw resistant granite pedestals, root-insulating planters, and automatic anti-freeze pipe drain valves."
+                  data-modal-area="1,600 sq ft"
+                  data-modal-plants="Dwarf Mountain Pine, Feather Reed Grass, Silver Birch Bonsai, Heather"
+                  data-modal-irrig="Seasonal Anti-Freeze Thermal Drip" data-modal-timeline="6 Weeks Commissioning">
+                  <span>View Project Specs</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 4: VERTICAL GARDEN TRANSFORMATIONS
+         ========================================================================== -->
+    <section class="gal-section" id="galVerticalGardenSection">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="eyebrow">BIO-ENGINEERED FACADES</span>
+          <h2 class="section-title serif">Vertical Garden Transformations</h2>
+          <p class="section-subtitle">
+            Hydroponic living green walls engineered for acoustic insulation, urban biodiversity, thermal cooling, and
+            breathtaking biophilic aesthetics.
+          </p>
+        </div>
+
+        <div class="gal-projects-grid">
+
+          <!-- Card 7: 4-Story Living Facade -->
+          <article class="gal-card" data-project="facade">
+            <div class="gal-card-media">
+              <img src="assets/images/projects/project-gal-living-wall-facade.jpg" alt="4-Story Exterior Living Facade"
+                loading="lazy">
+              <div class="gal-card-overlay"></div>
+              <span class="gal-badge-type">Exterior Hydroponic Wall</span>
+              <div class="gal-badge-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Mayfair Luxury Residence, London</span>
+              </div>
+            </div>
+            <div class="gal-card-content">
+              <h3 class="gal-project-title serif">4-Story Exterior Living </h3>
+              <p class="gal-project-desc">
+                A majestic 4-story living green wall comprising 6,800 perennial botanicals, closed-loop solar
+                fertigation, and automated moisture sensors.
+              </p>
+              <div class="gal-specs-row">
+                <div class="gal-spec-item">
+                  <span class="gal-spec-label">Vertical Area</span>
+                  <span class="gal-spec-val">1,450 sq ft</span>
+                </div>
+                <div class="gal-spec-item">
+                  <span class="gal-spec-label">Plant Count</span>
+                  <span class="gal-spec-val">6,800 Species</span>
+                </div>
+                <div class="gal-spec-item">
+                  <span class="gal-spec-label">System Type</span>
+                  <span class="gal-spec-val">Hydroponic Felt Matrix</span>
+                </div>
+                <div class="gal-spec-item">
+                  <span class="gal-spec-label">Completion</span>
+                  <span class="gal-spec-val">Summer 2025</span>
+                </div>
+              </div>
+              <div class="gal-card-footer">
+                <button type="button" class="gal-view-btn" data-modal-title="4-Story Exterior Living Facade"
+                  data-modal-tag="Exterior Hydroponic Wall • Mayfair London"
+                  data-modal-img="assets/images/projects/project-gal-living-wall-facade.jpg"
+                  data-modal-desc="This monumental 4-story exterior living wall provides an estimated 4.2°C ambient microclimate cooling effect while absorbing 28% of urban street noise. Features 100% closed-loop nutrient recirculation."
+                  data-modal-area="1,450 sq ft"
+                  data-modal-plants="Heuchera, Carex Evergold, Polystichum Ferns, Vinca Minor, Geranium"
+                  data-modal-irrig="Closed-Loop Solar Recirculating Fertigation"
+                  data-modal-timeline="6 Weeks Commissioning">
+                  <span>View Project Specs</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 8: Shaded Biophilic Patio Wall -->
+          <article class="gal-card" data-project="patio">
+            <div class="gal-card-media">
+              <img src="assets/images/projects/project-gal-patio-biophilic-wall.jpg" alt="Shaded Biophilic Patio Wall"
+                loading="lazy">
+              <div class="gal-card-overlay"></div>
+              <span class="gal-badge-type">Courtyard Living Wall</span>
+              <div class="gal-badge-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>West Village Courtyard, NY</span>
+              </div>
+            </div>
+            <div class="gal-card-content">
+              <h3 class="gal-project-title serif">Shaded Biophilic Patio Wall</h3>
+              <p class="gal-project-desc">
+                Shade-loving ferns, tropical calatheas, and cascading philodendrons transform to the dark residential
+                brick
+                lightwell into an emerald.
+              </p>
+              <div class="gal-specs-row">
+                <div class="gal-spec-item">
+                  <span class="gal-spec-label">Vertical Area</span>
+                  <span class="gal-spec-val">580 sq ft</span>
+                </div>
+                <div class="gal-spec-item">
+                  <span class="gal-spec-label">Lighting Tech</span>
+                  <span class="gal-spec-val">Full-Spectrum LED</span>
+                </div>
+                <div class="gal-spec-item">
+                  <span class="gal-spec-label">Drainage</span>
+                  <span class="gal-spec-val">Zero-Runoff Gutter</span>
+                </div>
+                <div class="gal-spec-item">
+                  <span class="gal-spec-label">Completion</span>
+                  <span class="gal-spec-val">Autumn 2025</span>
+                </div>
+              </div>
+              <div class="gal-card-footer">
+                <button type="button" class="gal-view-btn" data-modal-title="Shaded Biophilic Patio Wall"
+                  data-modal-tag="Courtyard Living Wall • West Village NY"
+                  data-modal-img="assets/images/projects/project-gal-patio-biophilic-wall.jpg"
+                  data-modal-desc="Designed for shaded urban courtyard lightwells that receive minimal direct sunlight. Equipped with discrete architectural full-spectrum LED grow luminaires and silent sub-gravel drainage reservoirs."
+                  data-modal-area="580 sq ft"
+                  data-modal-plants="Asplenium Scolopendrium, Calathea, Philodendron Cordatum, Moss"
+                  data-modal-irrig="Pulse Hydroponic Emitter Array" data-modal-timeline="3 Weeks Commissioning">
+                  <span>View Project Specs</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 9: Commercial Acoustic Living Wall -->
+          <article class="gal-card" data-project="acoustic">
+            <div class="gal-card-media">
+              <img src="assets/images/projects/project-gal-acoustic-green-wall.jpg"
+                alt="Commercial Acoustic Living Wall" loading="lazy">
+              <div class="gal-card-overlay"></div>
+              <span class="gal-badge-type">Acoustic Biophilic Wall</span>
+              <div class="gal-badge-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Canary Wharf Headquarters, London</span>
+              </div>
+            </div>
+            <div class="gal-card-content">
+              <h3 class="gal-project-title serif">Commercial Acoustic Living Wall</h3>
+              <p class="gal-project-desc">
+                High-density modular living modules engineered to absorb rooftop HVAC noise while creating an inspiring
+                executive lounge terrace.
+              </p>
+              <div class="gal-specs-row">
+                <div class="gal-spec-item">
+                  <span class="gal-spec-label">Vertical Area</span>
+                  <span class="gal-spec-val">820 sq ft</span>
+                </div>
+                <div class="gal-spec-item">
+                  <span class="gal-spec-label">Noise Reduction</span>
+                  <span class="gal-spec-val">-14 dB Attenuation</span>
+                </div>
+                <div class="gal-spec-item">
+                  <span class="gal-spec-label">Automation</span>
+                  <span class="gal-spec-val">BMS Cloud Connected</span>
+                </div>
+                <div class="gal-spec-item">
+                  <span class="gal-spec-label">Completion</span>
+                  <span class="gal-spec-val">Winter 2025</span>
+                </div>
+              </div>
+              <div class="gal-card-footer">
+                <button type="button" class="gal-view-btn" data-modal-title="Commercial Acoustic Living Wall"
+                  data-modal-tag="Acoustic Biophilic Wall • Canary Wharf London"
+                  data-modal-img="assets/images/projects/project-gal-acoustic-green-wall.jpg"
+                  data-modal-desc="Delivered for an international financial headquarters rooftop lounge, providing acoustic dampening from heavy HVAC ventilation units and featuring 100% remote IoT monitoring."
+                  data-modal-area="820 sq ft"
+                  data-modal-plants="Chlorophytum, Fatsia Japonica, Pachysandra, Hedera Helix"
+                  data-modal-irrig="IoT Cloud-Controlled Precision Drip" data-modal-timeline="4 Weeks Commissioning">
+                  <span>View Project Specs</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 5: BEFORE / AFTER + FREE SITE VISIT CTA
+         ========================================================================== -->
+    <section class="gal-section" id="galBeforeAfterCtaSection" style="background: var(--bg-surface-alt);">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="eyebrow">DRAMATIC TRANSFORMATIONS</span>
+          <h2 class="section-title serif">Before &amp; After Case Study + Site Audit</h2>
+          <p class="section-subtitle">
+            Witness how TerraVerde converts unutilized concrete rooftops into world-class botanical destinations.
+            Schedule your complimentary engineering evaluation.
+          </p>
+        </div>
+
+        <div class="gal-ba-cta-grid">
+
+          <!-- 3-Stage Dramatic Transformations Cards Grid -->
+          <div class="gal-ba-pair-box">
+
+            <!-- Card 1: Before -->
+            <div class="gal-ba-card">
+              <div class="gal-ba-media">
+                <img src="assets/images/projects/project-gal-before-rooftop.jpg"
+                  alt="Unused Industrial Concrete Rooftop Before Renovation" loading="lazy">
+                <span class="gal-ba-pill before">BEFORE: Concrete Slab</span>
+              </div>
+              <div class="gal-ba-body">
+                <h4 class="serif">Unused Industrial Rooftop</h4>
+                <p>Bare concrete membrane, exposed HVAC units, zero privacy, and harsh direct urban solar heat gain.</p>
+              </div>
+            </div>
+
+            <!-- Card 2: Mid-Stage Hardscaping -->
+            <div class="gal-ba-card">
+              <div class="gal-ba-media">
+                <img src="assets/images/projects/project-gal-mid-rooftop.jpg"
+                  alt="Precision Decking Construction and Pergola Structure Installation" loading="lazy">
+                <span class="gal-ba-pill during">STAGE 2: Structure &amp; Decking</span>
+              </div>
+              <div class="gal-ba-body">
+                <h4 class="serif">Precision Timber </h4>
+                <p>Sub-frame leveling, teak wood decking installation, high-tensile black aluminum pergola assembly, and
+                  container staging.</p>
+              </div>
+            </div>
+
+            <!-- Card 3: Completed Sanctuary -->
+            <div class="gal-ba-card">
+              <div class="gal-ba-media">
+                <img src="assets/images/projects/project-gal-after-rooftop.jpg"
+                  alt="Luxurious Finished Resort Sanctuary Terrace with Sunset London Skyline" loading="lazy">
+                <span class="gal-ba-pill after">AFTER: Resort Sanctuary</span>
+              </div>
+              <div class="gal-ba-body">
+                <h4 class="serif">Private Botanical Oasis</h4>
+                <p>Finished hardwood decking, integrated ambient LED pergola, lush potted olive trees, plush lounge
+                  sofa, and sunset views.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Free Site Visit Booking Form CTA Card (Placed Below the 3 Cards) -->
+          <div class="gal-site-visit-card gal-site-visit-banner">
+            <span class="eyebrow" style="background: rgba(255,255,255,0.15); color: var(--warm-gold);">COMPLIMENTARY
+              CONSULTATION</span>
+            <h3 class="serif"
+              style="color: #FFFFFF; font-size: clamp(1.6rem, 2.5vw, 2.2rem); margin: 0.75rem 0 0.75rem;">
+              Request Your Free Site &amp; Structural Audit
+            </h3>
+            <p
+              style="color: rgba(255,255,255,0.88); font-size: 0.95rem; line-height: 1.6; margin-bottom: 2rem; max-width: 820px;">
+              Our senior landscape architects will inspect your rooftop weight tolerance, sunlight trajectory, and
+              drainage layout at zero cost.
+            </p>
+
+            <form class="h2-form" id="galSiteVisitForm"
+              onsubmit="event.preventDefault(); alert('Consultation requested successfully! Our senior landscape architect will contact you within 24 hours to schedule your on-site structural audit.'); this.reset();">
+              <div class="gal-audit-inputs-row">
+                <div class="h2-form-group">
+                  <label class="h2-form-label" style="color: #FFFFFF;" for="galName">Full Name</label>
+                  <input type="text" id="galName" class="h2-form-input" placeholder="e.g. Eleanor Vance" required>
+                </div>
+                <div class="h2-form-group">
+                  <label class="h2-form-label" style="color: #FFFFFF;" for="galEmail">Email Address</label>
+                  <input type="email" id="galEmail" class="h2-form-input" placeholder="eleanor@example.com" required>
+                </div>
+                <div class="h2-form-group">
+                  <label class="h2-form-label" style="color: #FFFFFF;" for="galPropertyType">Project Scope / Space
+                    Type</label>
+                  <select id="galPropertyType" class="h2-form-select" required>
+                    <option value="" disabled selected>Select your space type</option>
+                    <option value="penthouse">Penthouse Rooftop (&gt; 1,500 sq ft)</option>
+                    <option value="terrace">Residential Terrace (500 - 1,500 sq ft)</option>
+                    <option value="balcony">Apartment Balcony (&lt; 500 sq ft)</option>
+                    <option value="living-wall">Vertical Living Green Wall</option>
+                    <option value="commercial">Commercial Hospitality Terrace</option>
+                  </select>
+                </div>
+                <div class="h2-form-group">
+                  <button type="submit" class="btn btn-accent"
+                    style="width: 100%; justify-content: center; height: 50px;">
+                    <span>Book Free Site Audit &rarr;</span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       SITE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer" id="siteFooter">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <!-- Column 1: Brand Info & Socials -->
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="TerraVerdé Home">
+            <img src="assets/images/logo-transparent.png" alt="TerraVerdé - Rooftop &amp; Terrace"
+              class="brand-logo-img logo-light" width="165" height="48">
+            <img src="assets/images/logo-dark.png" alt="TerraVerdé - Rooftop &amp; Terrace"
+              class="brand-logo-img logo-dark" width="165" height="48">
+          </a>
+          <p class="footer-desc">
+            Pioneering luxury rooftop architecture, sustainable botanical sanctuaries, and custom urban terraces
+            designed for elevated outdoor living.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="Pinterest">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M8 20l4-9-1.5-3.5 3 1.5 2 5-3 6"></path>
+              </svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation -->
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home 1 (Signature)</a></li>
+            <li><a href="home-2.html" class="footer-link">Home 2 (Editorial)</a></li>
+            <li><a href="services.html" class="footer-link">Services Overview</a></li>
+            <li><a href="projects-gallery.html" class="footer-link">Projects Gallery</a></li>
+            <li><a href="plant-selection.html" class="footer-link">Plant Selection</a></li>
+            <li><a href="maintenance-plans.html" class="footer-link">Maintenance Plans</a></li>
+            <li><a href="about.html" class="footer-link">About TerraVerdé</a></li>
+            <li><a href="contact.html" class="footer-link">Contact &amp; Site Visit</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Specialties -->
+        <div>
+          <h4 class="footer-heading">Specialties</h4>
+          <ul class="footer-links">
+            <li><a href="services.html" class="footer-link">Terrace Landscape Design</a></li>
+            <li><a href="services.html" class="footer-link">Rooftop Container Gardens</a></li>
+            <li><a href="services.html" class="footer-link">Vertical Green Walls</a></li>
+            <li><a href="services.html" class="footer-link">Smart Drip Irrigation</a></li>
+            <li><a href="maintenance-plans.html" class="footer-link">Seasonal Plant Care</a></li>
+            <li><a href="services.html" class="footer-link">Windbreak &amp; Pergolas</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact & Global Studios -->
+        <div class="footer-contact-col">
+          <h4 class="footer-heading">Contact &amp; Studios</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">
+              <span class="footer-contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg></span>
+              <div>
+                <strong>NY Studio:</strong> 450 Hudson St, Tribeca, NY 10014
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <span class="footer-contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                  <line x1="9" y1="22" x2="9" y2="22.01"></line>
+                  <line x1="15" y1="22" x2="15" y2="22.01"></line>
+                  <line x1="9" y1="6" x2="9" y2="6.01"></line>
+                  <line x1="15" y1="6" x2="15" y2="6.01"></line>
+                  <line x1="9" y1="10" x2="9" y2="10.01"></line>
+                  <line x1="15" y1="10" x2="15" y2="10.01"></line>
+                  <line x1="9" y1="14" x2="9" y2="14.01"></line>
+                  <line x1="15" y1="14" x2="15" y2="14.01"></line>
+                  <line x1="9" y1="18" x2="9" y2="18.01"></line>
+                  <line x1="15" y1="18" x2="15" y2="18.01"></line>
+                </svg></span>
+              <div>
+                <strong>London Atelier:</strong> 28 Berkeley Square, Mayfair, London W1J 6EN
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <span class="footer-contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg></span>
+              <div>
+                <strong>Direct Line:</strong> <a href="tel:+18004928377" class="footer-contact-link">+1 (800)
+                  492-8377</a>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <span class="footer-contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg></span>
+              <div>
+                <strong>Inquiries:</strong> <a href="mailto:concierge@terraverde-gardens.com"
+                  class="footer-contact-link">concierge@terraverde-gardens.com</a>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <span class="footer-contact-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg></span>
+              <div>
+                <strong>Hours:</strong> Mon &ndash; Sat: 8:00 AM &ndash; 7:00 PM EST
+              </div>
+            </div>
+          </div>
+          <div style="margin-top: 1.25rem;">
+            <a href="contact.html" class="btn btn-accent btn-sm" style="width: 100%; justify-content: center;">Book Free
+              Site Visit &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 TerraVerd&eacute; Rooftop &amp; Terrace Garden Design. All rights reserved.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="contact.html" class="footer-bottom-link">Site Consultation</a>
+          <span style="opacity: 0.3;">&bull;</span>
+          <a href="about.html" class="footer-bottom-link">Privacy Policy</a>
+          <span style="opacity: 0.3;">&bull;</span>
+          <a href="about.html" class="footer-bottom-link">Terms of Service</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       INTERACTIVE PROJECT LIGHTBOX MODAL
+       ========================================================================== -->
+  <div class="project-modal" id="projectDetailsModal">
+    <div class="project-modal-box">
+      <div class="project-modal-media">
+        <img src="assets/images/projects/project-gal-skyline-penthouse.jpg" id="modalProjectImg" alt="Project Preview">
+        <button type="button" class="project-modal-close" id="projectModalClose"
+          aria-label="Close project modal">&times;</button>
+      </div>
+      <div class="project-modal-body">
+        <span class="eyebrow" id="modalProjectTag">Penthouse Rooftop</span>
+        <h3 class="serif" id="modalProjectTitle"
+          style="font-size: 1.75rem; margin: 0.5rem 0 1rem; color: var(--forest);">Skyline Penthouse Sanctuary</h3>
+        <p id="modalProjectDesc"
+          style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.65; margin-bottom: 1.5rem;">
+          Detailed architectural overview and engineering breakdown for this bespoke rooftop living space.
+        </p>
+
+        <div class="project-modal-meta-grid">
+          <div>
+            <span
+              style="font-size: 0.72rem; text-transform: uppercase; font-weight: 700; color: var(--text-muted); display: block;">Footprint</span>
+            <strong id="modalProjectArea" style="color: var(--forest); font-size: 0.95rem;">2,450 sq ft</strong>
+          </div>
+          <div>
+            <span
+              style="font-size: 0.72rem; text-transform: uppercase; font-weight: 700; color: var(--text-muted); display: block;">Timeline</span>
+            <strong id="modalProjectTimeline" style="color: var(--forest); font-size: 0.95rem;">7 Weeks</strong>
+          </div>
+          <div>
+            <span
+              style="font-size: 0.72rem; text-transform: uppercase; font-weight: 700; color: var(--text-muted); display: block;">Irrigation</span>
+            <strong id="modalProjectIrrig" style="color: var(--forest); font-size: 0.95rem;">Smart Solar Drip</strong>
+          </div>
+          <div>
+            <span
+              style="font-size: 0.72rem; text-transform: uppercase; font-weight: 700; color: var(--text-muted); display: block;">Key
+              Botanicals</span>
+            <strong id="modalProjectPlants" style="color: var(--forest); font-size: 0.85rem;">Olive Trees,
+              Lavender</strong>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem;">
+          <a href="#galBeforeAfterCtaSection" class="btn btn-primary" id="modalBookConsultBtn"
+            onclick="document.getElementById('projectDetailsModal').classList.remove('active');">
+            <span>Book Similar Consultation</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <button type="button" class="btn btn-secondary"
+            onclick="document.getElementById('projectDetailsModal').classList.remove('active');">
+            <span>Close Details</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       LOGIN MODAL
+       ========================================================================== -->
+  <div class="login-modal" id="loginModal">
+    <div class="login-modal-box">
+      <div class="login-modal-header">
+        <h3 class="serif">Client Portal Login</h3>
+        <button type="button" class="login-modal-close" id="loginModalClose"
+          aria-label="Close login modal">&times;</button>
+      </div>
+      <p class="login-modal-desc">
+        Access your real-time terrace irrigation telemetry, 3D architectural plans, and seasonal maintenance schedule.
+      </p>
+      <form class="login-modal-form" id="loginModalForm"
+        onsubmit="event.preventDefault(); alert('Authentication successful. Redirecting to client portal dashboard...'); document.getElementById('loginModal').classList.remove('active');">
+        <div class="form-group">
+          <label class="form-label" for="loginEmail">Email Address</label>
+          <input type="email" id="loginEmail" class="form-input" placeholder="name@example.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" class="form-input"
+            placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" required>
+        </div>
+        <div
+          style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; font-size: 0.85rem;">
+          <label style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer;">
+            <input type="checkbox"> Remember me
+          </label>
+          <a href="#forgot" style="color: var(--forest); font-weight: 600;">Forgot Password?</a>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Sign In to Client
+          Portal</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Floating Circular Glowing Back to Top Button -->
+  <button type="button" class="floating-back-to-top" id="backToTopBtn" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
