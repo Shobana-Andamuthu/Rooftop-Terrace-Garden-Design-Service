@@ -104,16 +104,16 @@ document.addEventListener('DOMContentLoaded', () => {
       if (theme === 'dark') {
         btn.classList.add('theme-dark-active');
         if (isFullText) {
-          btn.innerHTML = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg> <span>Light Mode</span>`;
+          btn.innerHTML = `<svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg><span>Light Mode</span>`;
         } else {
-          btn.innerHTML = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>`;
+          btn.innerHTML = `<svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>`;
         }
       } else {
         btn.classList.remove('theme-dark-active');
         if (isFullText) {
-          btn.innerHTML = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg> <span>Dark Mode</span>`;
+          btn.innerHTML = `<svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><span>Dark Mode</span>`;
         } else {
-          btn.innerHTML = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>`;
+          btn.innerHTML = `<svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>`;
         }
       }
     });
@@ -594,9 +594,20 @@ document.addEventListener('DOMContentLoaded', () => {
         wrapper.classList.add('dark-card-select');
       }
 
+      select.classList.remove('contact-select', 'form-select', 'h2-form-select', 'h2-bento-select');
       select.classList.add('tv-hidden-select');
+      select.style.display = 'none';
+      select.style.position = 'absolute';
+      select.style.width = '0px';
+      select.style.height = '0px';
+      select.style.minHeight = '0px';
+      select.style.maxHeight = '0px';
+      select.style.margin = '0px';
+      select.style.padding = '0px';
+      select.style.border = '0px';
+      select.style.opacity = '0';
+      select.style.pointerEvents = 'none';
       select.parentNode.insertBefore(wrapper, select);
-      wrapper.appendChild(select);
 
       const trigger = document.createElement('button');
       trigger.type = 'button';
@@ -655,6 +666,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       wrapper.appendChild(dropdown);
+      wrapper.appendChild(select);
 
       trigger.addEventListener('click', (e) => {
         e.stopPropagation();
@@ -710,7 +722,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     dateInputs.forEach(input => {
       input.setAttribute('data-customized', 'true');
+      input.classList.remove('contact-input', 'form-input');
       input.classList.add('tv-hidden-date-input');
+      input.style.display = 'none';
+      input.style.position = 'absolute';
+      input.style.width = '0px';
+      input.style.height = '0px';
+      input.style.minHeight = '0px';
+      input.style.maxHeight = '0px';
+      input.style.margin = '0px';
+      input.style.padding = '0px';
+      input.style.border = '0px';
+      input.style.opacity = '0';
+      input.style.pointerEvents = 'none';
 
       const wrapper = document.createElement('div');
       wrapper.className = 'tv-custom-datepicker-wrap';
@@ -719,7 +743,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       input.parentNode.insertBefore(wrapper, input);
-      wrapper.appendChild(input);
 
       // Trigger button
       const trigger = document.createElement('button');
@@ -758,6 +781,9 @@ document.addEventListener('DOMContentLoaded', () => {
       dropdown.className = 'tv-datepicker-dropdown';
       dropdown.setAttribute('role', 'dialog');
       dropdown.setAttribute('aria-label', 'Calendar Date Picker');
+
+      wrapper.appendChild(dropdown);
+      wrapper.appendChild(input);
 
       // State
       let currentDate = new Date();

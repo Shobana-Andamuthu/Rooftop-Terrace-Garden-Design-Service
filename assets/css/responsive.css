@@ -96,6 +96,27 @@ html, body {
   .gal-audit-inputs-row > div:last-child {
     grid-column: span 2 !important;
   }
+
+  /* iPad & iPad Pro Bento Hero Adjustments */
+  .h2-hero-bento-grid {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto !important;
+    gap: 1.5rem !important;
+  }
+
+  .h2-bento-main {
+    grid-row: auto !important;
+    min-height: 420px !important;
+  }
+
+  .h2-bento-calculator {
+    padding: 1.75rem 2rem !important;
+  }
+
+  .h2-bento-metrics {
+    padding: 1.5rem 1.75rem !important;
+    gap: 1rem !important;
+  }
 }
 
 /* ==========================================================================
@@ -704,13 +725,17 @@ html, body {
 
   .contact-input,
   .contact-select,
-  .contact-textarea {
-    padding: 0.75rem 0.9rem;
-    font-size: 0.9rem;
+  .tv-select-trigger,
+  .tv-datepicker-trigger {
+    height: 48px !important;
+    min-height: 48px !important;
+    padding: 0 0.95rem !important;
+    font-size: 0.9rem !important;
   }
-  
-  input[type="date"] {
-    min-height: 44px;
+
+  .contact-textarea {
+    padding: 0.75rem 0.9rem !important;
+    font-size: 0.9rem !important;
   }
 
   .tv-datepicker-dropdown {
@@ -885,6 +910,25 @@ html, body {
   .hamburger-btn {
     width: 38px;
     height: 38px;
+  }
+
+  .mobile-controls-row {
+    gap: 0.5rem !important;
+  }
+
+  .mobile-controls-row .btn,
+  .mobile-drawer-footer .theme-toggle-btn,
+  .mobile-drawer-footer .rtl-toggle-btn {
+    padding: 0 0.65rem !important;
+    font-size: 0.82rem !important;
+    gap: 0.45rem !important;
+  }
+
+  .mobile-controls-row .btn svg,
+  .mobile-drawer-footer .theme-toggle-btn svg,
+  .mobile-drawer-footer .rtl-toggle-btn svg {
+    width: 17px !important;
+    height: 17px !important;
   }
 }
 
