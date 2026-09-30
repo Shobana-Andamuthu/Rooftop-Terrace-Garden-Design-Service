@@ -834,6 +834,26 @@ h1, h2, h3, h4, h5, h6 {
   gap: 0.5rem;
 }
 
+.mobile-login-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: var(--radius-full);
+}
+
+.mobile-login-btn svg {
+  flex-shrink: 0;
+  transition: transform var(--transition);
+}
+
+.mobile-login-btn:hover svg {
+  transform: scale(1.1);
+}
+
 /* ==========================================================================
    FLOATING BACK-TO-TOP BUTTON (Exact Image Match with Glowing Ring)
    ========================================================================== */
@@ -4204,11 +4224,12 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--bg-card);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-xl);
-  padding: 2rem 1.75rem;
+  padding: 0;
+  overflow: hidden;
   box-shadow: var(--shadow-sm);
   display: flex;
   flex-direction: column;
-  transition: transform var(--transition), box-shadow var(--transition);
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
 }
 
 .about-pillar-card:hover {
@@ -4219,10 +4240,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .about-pillar-media {
   width: 100%;
-  height: 160px;
-  border-radius: var(--radius-lg);
+  height: 190px;
+  border-radius: 0;
   overflow: hidden;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0;
   background: var(--bg-surface-alt);
 }
 
@@ -4235,6 +4256,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .about-pillar-card:hover .about-pillar-media img {
   transform: scale(1.05);
+}
+
+.about-pillar-body {
+  padding: 1.6rem 1.6rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .about-pillar-icon {
@@ -4267,7 +4295,7 @@ h1, h2, h3, h4, h5, h6 {
 .about-pillar-title {
   font-size: 1.18rem;
   font-weight: 700;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
   min-height: 2.6rem;
   display: flex;
   align-items: center;
@@ -4278,7 +4306,6 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-muted);
   line-height: 1.55;
   margin: 0;
-  min-height: 4.8rem;
 }
 
 /* Section 4: Garden Experts (3 Cards) */
